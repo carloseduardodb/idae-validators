@@ -127,7 +127,8 @@ idae-validators/
 │   ├── llm-validators*/    validators escritos por LLM (X3, X5)
 │   └── usgs/               eventos reais do USGS Earthquake Catalog
 ├── results/                JSON e saída de cada experimento
-├── article/                LaTeX + classe ACM + PDF (arxiv/: versão em inglês)
+├── article/                LaTeX + classe ACM + PDF (arxiv/: versão em inglês;
+│                           x7-origem/: repositório de origem do X7, com o histórico)
 ├── PLANO.md                plano do estudo e registro do que foi feito
 └── tests/
 ```
