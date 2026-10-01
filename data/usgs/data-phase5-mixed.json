@@ -1,0 +1,242 @@
+[
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.9,\"place\":\"Balleny Islands region\",\"time\":1711904670729,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma86\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma86&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":369,\"net\":\"us\",\"code\":\"7000ma86\",\"ids\":\",us7000ma86,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":17,\"dmin\":8.134,\"rms\":0.73,\"gap\":114,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.9 - Balleny Islands region\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[156.6351,-62.5195,10]},\"id\":\"us7000ma86\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.9,\"place\":\"183 km ESE of Tadine, New Caledonia\",\"time\":1711895146679,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92r\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92r&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":369,\"net\":\"us\",\"code\":\"7000m92r\",\"ids\":\",usauto7000m92r,us7000m92r,\",\"sources\":\",usauto,us,\",\"types\":\",internal-moment-tensor,origin,phase-data,\",\"nst\":66,\"dmin\":2.054,\"rms\":0.93,\"gap\":123,\"magType\":\"mww\",\"type\":\"earthquake\",\"title\":\"M 4.9 - 183 km ESE of Tadine, New Caledonia\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[169.5772,-22.0399,10]},\"id\":\"us7000m92r\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:07:05.570Z,18.778666666667,-67.274666666667,5.72,2.85,md,14,304,0.3462,0.07,pr,pr71454373,2024-06-30T22:24:45.700Z,\"36 km NNW of San Antonio, Puerto Rico\",earthquake,0.76,0.77,0.062354660464848,8,reviewed,pr,pr"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":5,\"place\":\"southeast of the Loyalty Islands\",\"time\":1711909223373,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m93l\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m93l&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":385,\"net\":\"us\",\"code\":\"7000m93l\",\"ids\":\",us7000m93l,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":46,\"dmin\":3.831,\"rms\":0.82,\"gap\":76,\"magType\":\"mww\",\"type\":\"earthquake\",\"title\":\"M 5.0 - southeast of the Loyalty Islands\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[171.5923,-22.7357,10]},\"id\":\"us7000m93l\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"196 km ENE of Levuka, Fiji\",\"time\":1711896719380,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92t\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92t&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000m92t\",\"ids\":\",us7000m92t,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":43,\"dmin\":2.063,\"rms\":0.79,\"gap\":44,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - 196 km ENE of Levuka, Fiji\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-178.8702,-17.677,550.192]},\"id\":\"us7000m92t\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4,\"place\":\"Volcano Islands, Japan region\",\"time\":1711921680275,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma8c\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma8c&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":246,\"net\":\"us\",\"code\":\"7000ma8c\",\"ids\":\",us7000ma8c,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":19,\"dmin\":3.804,\"rms\":0.7,\"gap\":139,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.0 - Volcano Islands, Japan region\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[142.3437,23.2782,118.645]},\"id\":\"us7000ma8c\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:56:47.070Z,34.9108333,-119.6111667,10.35,1.29,ml,20,76,0.0606,0.18,ci,ci40815032,2024-07-02T22:37:26.967Z,\"25 km SW of Maricopa, CA\",earthquake,0.35,0.6,0.185,14,reviewed,ci,ci"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:48:16.109Z,53.861,-168.1682,16.6,1.7,ml,,,,0.23,ak,ak0248dd70tm,2024-10-07T20:14:35.771Z,\"106 km W of Dutch Harbor, Alaska\",earthquake,,1,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:03:40.610Z,19.39349937439,-155.25050354004,1.1100000143051,1.76,ml,21,50,0.007984,0.140000001,hv,hv74306756,2024-06-30T22:06:19.920Z,\"5 km SSW of Volcano, Hawaii\",earthquake,0.19,0.140000001,0.39,12,automatic,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"Banda Sea\",\"time\":1711884041839,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m928\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m928&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000m928\",\"ids\":\",us7000m928,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":48,\"dmin\":2.234,\"rms\":0.92,\"gap\":46,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - Banda Sea\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[129.5881,-6.7485,159.442]},\"id\":\"us7000m928\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:38:48.503Z,51.4477,-178.5248,59.9,1.9,ml,,,,0.44,ak,ak0248dd4y4y,2024-08-09T21:48:33.200Z,\"139 km WSW of Adak, Alaska\",earthquake,,0.5,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:58:13.780Z,35.6933333,-117.5506667,4.42,1.13,ml,21,108,0.1071,0.12,ci,ci40815040,2024-07-02T19:22:32.111Z,\"14 km NE of Ridgecrest, CA\",earthquake,0.25,0.54,0.171,14,reviewed,ci,ci"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:26:17.976Z,60.2533,-152.4773,94,1.4,ml,,,,0.35,ak,ak0248dcgvkz,2024-08-09T21:48:32.579Z,\"50 km WNW of Ninilchik, Alaska\",earthquake,,0.9,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:50:51.530Z,59.9548,-141.5976,2.2,1.5,ml,,,,0.88,ak,ak0248dcm3f1,2024-08-09T21:48:29.370Z,\"114 km WNW of Yakutat, Alaska\",earthquake,,0.1,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:04:04.480Z,19.463666666667,-155.68466666667,6.86,2.09,ml,35,55,0.04389,0.2,hv,hv74306911,2024-07-02T23:49:04.760Z,\"18 km E of Honaunau-Napoopoo, Hawaii\",earthquake,0.39,0.69,0.21199181845832,8,reviewed,hv,hv"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:15:34.690Z,19.3865,-155.24333333333,1.69,2.59,ml,28,66,0.007594,0.09,hv,hv74306931,2024-09-04T21:57:45.040Z,\"6 km S of Volcano, Hawaii\",earthquake,0.18,0.15,0.14529176195599,10,reviewed,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.4,\"place\":\"260 km W of Abepura, Indonesia\",\"time\":1711897711312,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92x\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92x&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":298,\"net\":\"us\",\"code\":\"7000m92x\",\"ids\":\",us7000m92x,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":34,\"dmin\":2.397,\"rms\":0.56,\"gap\":70,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.4 - 260 km W of Abepura, Indonesia\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[138.314,-2.2911,40.905]},\"id\":\"us7000m92x\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"52 km SSW of Ovalle, Chile\",\"time\":1711905472021,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m93a\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m93a&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000m93a\",\"ids\":\",us7000m93a,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":33,\"dmin\":0.381,\"rms\":1.02,\"gap\":143,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - 52 km SSW of Ovalle, Chile\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-71.4045,-31.0444,62.09]},\"id\":\"us7000m93a\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.3,\"place\":\"6 km SW of Marihatag, Philippines\",\"time\":1711900639323,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma84\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma84&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":284,\"net\":\"us\",\"code\":\"7000ma84\",\"ids\":\",us7000ma84,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":21,\"dmin\":1.818,\"rms\":0.73,\"gap\":131,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.3 - 6 km SW of Marihatag, Philippines\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[126.2523,8.7719,61.716]},\"id\":\"us7000ma84\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.8,\"place\":\"Sverdrup Islands, Nunavut, Canada\",\"time\":1711897477327,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92v\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92v&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":1,\"sig\":354,\"net\":\"us\",\"code\":\"7000m92v\",\"ids\":\",at00sb7wjq,us7000m92v,\",\"sources\":\",at,us,\",\"types\":\",impact-link,origin,phase-data,\",\"nst\":60,\"dmin\":4.196,\"rms\":0.7,\"gap\":53,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.8 - Sverdrup Islands, Nunavut, Canada\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-94.9821,78.8607,10]},\"id\":\"us7000m92v\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.1,\"place\":\"Kermadec Islands, New Zealand\",\"time\":1711869122107,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma7v\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma7v&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":259,\"net\":\"us\",\"code\":\"7000ma7v\",\"ids\":\",us7000ma7v,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":11,\"dmin\":1.568,\"rms\":0.7,\"gap\":147,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.1 - Kermadec Islands, New Zealand\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-177.5174,-30.796,10]},\"id\":\"us7000ma7v\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:17:44.389Z,36.3637,-115.2931,8,1.6,ml,18,311.55,0.72,0.1202,nn,nn00880193,2024-06-30T23:55:56.791Z,\"24 km NW of North Las Vegas, Nevada\",earthquake,,1.4,0.22,8,reviewed,nn,nn"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:25:20.200Z,40.000333333333,-123.80933333333,5.27,1.56,md,30,97,,0.12,nc,nc75029291,2024-07-01T19:35:42.020Z,\"13 km S of Redway, CA\",earthquake,0.17,0.31,0.123,18,reviewed,nc,nc"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:41:08.870Z,19.390167236328,-155.2491607666,1.0499999523163,1.98000002,md,13,94,0.005058,0.119999997,hv,hv74306831,2024-06-30T22:42:34.860Z,\"6 km SSW of Volcano, Hawaii\",earthquake,0.24,0.25999999,0.289999992,12,automatic,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"195 km N of Sola, Vanuatu\",\"time\":1711913610209,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma89\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma89&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000ma89\",\"ids\":\",us7000ma89,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":37,\"dmin\":7.851,\"rms\":0.47,\"gap\":111,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - 195 km N of Sola, Vanuatu\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[167.4671,-12.1146,333.636]},\"id\":\"us7000ma89\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:43:08.184Z,54.4624,-161.5055,5.9,2,ml,,,,0.58,ak,ak0248dcki1o,2024-08-09T21:48:28.700Z,\"84 km SE of King Cove, Alaska\",earthquake,,0.5,,,reviewed,ak,ak"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.9,\"place\":\"1 km NE of Mamburao, Philippines\",\"time\":1711872030355,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m91h\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m91h&format=geojson\",\"felt\":3,\"cdi\":4.8,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":371,\"net\":\"us\",\"code\":\"7000m91h\",\"ids\":\",us7000m91h,\",\"sources\":\",us,\",\"types\":\",dyfi,origin,phase-data,\",\"nst\":104,\"dmin\":7.841,\"rms\":0.77,\"gap\":112,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.9 - 1 km NE of Mamburao, Philippines\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[120.6032,13.2325,10]},\"id\":\"us7000m91h\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"Banda Sea\",\"time\":1711891844389,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92m\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92m&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000m92m\",\"ids\":\",us7000m92m,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":30,\"dmin\":2.108,\"rms\":0.94,\"gap\":95,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - Banda Sea\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[129.5701,-6.6174,130.623]},\"id\":\"us7000m92m\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:44:20.845Z,66.3235,-157.2784,3.1,1.4,ml,,,,0.74,ak,ak0248dckqo9,2024-08-09T23:59:57.299Z,\"63 km S of Shungnak, Alaska\",earthquake,,0.3,,,reviewed,ak,ak"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.9,\"place\":\"23 km NE of Barcelona, Philippines\",\"time\":1711919803754,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m940\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m940&format=geojson\",\"felt\":3,\"cdi\":3.8,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":371,\"net\":\"us\",\"code\":\"7000m940\",\"ids\":\",us7000m940,\",\"sources\":\",us,\",\"types\":\",dyfi,origin,phase-data,\",\"nst\":124,\"dmin\":1.582,\"rms\":0.91,\"gap\":95,\"magType\":\"mww\",\"type\":\"earthquake\",\"title\":\"M 4.9 - 23 km NE of Barcelona, Philippines\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[126.5627,8.3237,52.108]},\"id\":\"us7000m940\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:16:36.900Z,19.393166666667,-155.25016666667,1.32,2.51,ml,24,59,0.007693,0.1,hv,hv74306936,2024-09-04T21:57:46.040Z,\"5 km SSW of Volcano, Hawaii\",earthquake,0.18,0.19,0.11559575467647,9,reviewed,hv,hv"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:07:48.050Z,19.3895,-155.24633333333,1.74,2.64,ml,31,59,0.00615,0.11,hv,hv74306916,2024-09-04T21:57:45.040Z,\"6 km SSW of Volcano, Hawaii\",earthquake,0.19,0.16,0.16376448705542,12,reviewed,hv,hv"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:03:01.330Z,19.398332595825,-155.25883483887,1.1900000572205,1.83,ml,15,53,0.006794,0.150000006,hv,hv74306746,2024-06-30T22:05:39.150Z,\"5 km SSW of Volcano, Hawaii\",earthquake,0.21,0.270000011,0.36,12,automatic,hv,hv"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:40:15.259Z,63.1565,-150.4483,108.6,1.1,ml,,,,0.41,ak,ak0248dcjved,2024-08-09T21:48:32.776Z,\"75 km NNE of Petersville, Alaska\",earthquake,,0.7,,,reviewed,ak,ak"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.4,\"place\":\"11 km W of Ashkāsham, Afghanistan\",\"time\":1711891533505,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92k\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92k&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":298,\"net\":\"us\",\"code\":\"7000m92k\",\"ids\":\",us7000m92k,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":55,\"dmin\":2.794,\"rms\":1.08,\"gap\":110,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.4 - 11 km W of Ashkāsham, Afghanistan\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[71.4021,36.6962,179.953]},\"id\":\"us7000m92k\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.4,\"place\":\"Vanuatu region\",\"time\":1711884931067,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m92b\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m92b&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":298,\"net\":\"us\",\"code\":\"7000m92b\",\"ids\":\",us7000m92b,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":83,\"dmin\":6.873,\"rms\":0.7,\"gap\":47,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.4 - Vanuatu region\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[171.9851,-14.0944,619.078]},\"id\":\"us7000m92b\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:28:24.780Z,17.976166666667,-66.6825,10.8,2.62,md,17,148,0.07367,0.07,pr,pr71454383,2024-06-30T23:44:06.530Z,\"4 km ESE of Tallaboa, Puerto Rico\",earthquake,0.25,0.36,0.035377088129387,6,reviewed,pr,pr"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:48:15.307Z,51.9113,-178.8184,140.2,2.1,ml,,,,0.36,ak,ak0248dd70qi,2024-08-09T21:48:33.629Z,\"150 km W of Adak, Alaska\",earthquake,,0.8,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T23:19:23.400Z,19.260665893555,-155.39866638184,32.20000076294,2.09,ml,50,128,0.07338,0.159999996,hv,hv74306941,2024-06-30T23:22:02.800Z,\"10 km NE of Pāhala, Hawaii\",earthquake,0.45,0.519999981,0.57,12,automatic,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"99 km SSE of Palekastro, Greece\",\"time\":1711881481081,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m921\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m921&format=geojson\",\"felt\":1,\"cdi\":1,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000m921\",\"ids\":\",us7000m921,\",\"sources\":\",us,\",\"types\":\",dyfi,origin,phase-data,\",\"nst\":68,\"dmin\":1.7,\"rms\":0.72,\"gap\":58,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - 99 km SSE of Palekastro, Greece\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[26.62,34.3563,10]},\"id\":\"us7000m921\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.7,\"place\":\"1 km WNW of Cabacao, Philippines\",\"time\":1711883067717,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m924\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m924&format=geojson\",\"felt\":2,\"cdi\":3.1,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":340,\"net\":\"us\",\"code\":\"7000m924\",\"ids\":\",us7000m924,usauto7000m924,\",\"sources\":\",us,usauto,\",\"types\":\",dyfi,internal-moment-tensor,origin,phase-data,\",\"nst\":62,\"dmin\":12.15,\"rms\":0.83,\"gap\":99,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.7 - 1 km WNW of Cabacao, Philippines\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[120.6472,13.3395,24.816]},\"id\":\"us7000m924\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:53:25.480Z,19.383333206177,-155.24583435059,2.0699999332428,1.73,ml,18,75,0.005604,0.170000002,hv,hv74306871,2024-06-30T22:56:02.320Z,\"6 km S of Volcano, Hawaii\",earthquake,0.28,0.209999993,0.24,9,automatic,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.1,\"place\":\"39 km SE of Basco, Philippines\",\"time\":1711887259897,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma87\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma87&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":259,\"net\":\"us\",\"code\":\"7000ma87\",\"ids\":\",us7000ma87,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":22,\"dmin\":2.835,\"rms\":0.52,\"gap\":125,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.1 - 39 km SE of Basco, Philippines\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[122.2112,20.1724,10.021]},\"id\":\"us7000ma87\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.5,\"place\":\"82 km NNW of Tezu, India\",\"time\":1711871793664,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma7x\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma7x&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":312,\"net\":\"us\",\"code\":\"7000ma7x\",\"ids\":\",us7000ma7x,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":24,\"dmin\":4.32,\"rms\":1.04,\"gap\":103,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.5 - 82 km NNW of Tezu, India\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[95.9137,28.6316,10]},\"id\":\"us7000ma7x\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:18:16.580Z,19.395334243774,-155.26383972168,1.6000000238419,1.92,ml,27,45,0.003557,0.209999993,hv,hv74306781,2024-06-30T22:20:55.250Z,\"6 km SSW of Volcano, Hawaii\",earthquake,0.25,0.209999993,0.18,12,automatic,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.3,\"place\":\"241 km SE of Chiniak, Alaska\",\"time\":1711929411209,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m94h\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m94h&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":1,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":284,\"net\":\"us\",\"code\":\"7000m94h\",\"ids\":\",ak02446vxnsz,us7000m94h,\",\"sources\":\",ak,us,\",\"types\":\",origin,phase-data,shakemap,\",\"nst\":74,\"dmin\":2.412,\"rms\":0.65,\"gap\":192,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.3 - 241 km SE of Chiniak, Alaska\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-149.6909,55.9718,13.098]},\"id\":\"us7000m94h\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.2,\"place\":\"95 km SW of Puerto Madero, Mexico\",\"time\":1711866343409,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m9cm\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m9cm&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":271,\"net\":\"us\",\"code\":\"7000m9cm\",\"ids\":\",us7000m9cm,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":85,\"dmin\":1.091,\"rms\":1.08,\"gap\":149,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.2 - 95 km SW of Puerto Madero, Mexico\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-93.1193,14.1912,10]},\"id\":\"us7000m9cm\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:32:24.189Z,53.0794,-168.0391,36.6,1.8,ml,,,,0.7,ak,ak0248dd3m1m,2024-08-09T21:48:29.594Z,\"57 km ENE of Nikolski, Alaska\",earthquake,,2.1,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:41:53.968Z,62.5499,-150.9521,77,1,ml,,,,0.61,ak,ak0248dd5lpg,2024-08-09T21:48:33.407Z,\"11 km WNW of Petersville, Alaska\",earthquake,,0.7,,,reviewed,ak,ak"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.2,\"place\":\"96 km WNW of Kirakira, Solomon Islands\",\"time\":1711926842716,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma8d\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma8d&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":271,\"net\":\"us\",\"code\":\"7000ma8d\",\"ids\":\",us7000ma8d,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":16,\"dmin\":1.326,\"rms\":0.54,\"gap\":180,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.2 - 96 km WNW of Kirakira, Solomon Islands\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[161.1636,-10.0093,85.563]},\"id\":\"us7000ma8d\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.2,\"place\":\"103 km NW of Gizo, Solomon Islands\",\"time\":1711875216620,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma7y\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma7y&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":271,\"net\":\"us\",\"code\":\"7000ma7y\",\"ids\":\",us7000ma7y,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":23,\"dmin\":4.217,\"rms\":0.62,\"gap\":90,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.2 - 103 km NW of Gizo, Solomon Islands\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[156.1998,-7.4165,54.961]},\"id\":\"us7000ma7y\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.6,\"place\":\"south of the Kermadec Islands\",\"time\":1711906709627,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m93j\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m93j&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":326,\"net\":\"us\",\"code\":\"7000m93j\",\"ids\":\",us7000m93j,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":23,\"dmin\":4.028,\"rms\":1.01,\"gap\":137,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.6 - south of the Kermadec Islands\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[-178.3198,-33.2877,10]},\"id\":\"us7000m93j\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:42:49.098Z,67.8842,-157.0002,1.1,1.3,ml,,,,0.91,ak,ak0248dd5t25,2024-08-09T21:48:29.786Z,\"96 km NNE of Ambler, Alaska\",earthquake,,0.3,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:42:08.903Z,62.6898,-151.9999,110,1,ml,,,,0.47,ak,ak0248dckaca,2024-08-09T21:48:32.987Z,\"66 km WNW of Petersville, Alaska\",earthquake,,0.6,,,reviewed,ak,ak"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T22:18:04.930Z,19.398500442505,-155.26533508301,1.1399999856949,1.92,ml,10,106,0.0007063,0.109999999,hv,hv74306776,2024-06-30T22:20:42.270Z,\"5 km SW of Volcano, Hawaii\",earthquake,0.24,0.349999994,0.26,12,automatic,hv,hv"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.2,\"place\":\"105 km ESE of Maba, Indonesia\",\"time\":1711866054155,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma7u\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma7u&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":271,\"net\":\"us\",\"code\":\"7000ma7u\",\"ids\":\",us7000ma7u,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":18,\"dmin\":1.849,\"rms\":0.93,\"gap\":116,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.2 - 105 km ESE of Maba, Indonesia\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[129.1616,0.3244,10]},\"id\":\"us7000ma7u\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4,\"place\":\"Izu Islands, Japan region\",\"time\":1711880480295,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma80\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma80&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":246,\"net\":\"us\",\"code\":\"7000ma80\",\"ids\":\",us7000ma80,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":66,\"dmin\":3.349,\"rms\":0.85,\"gap\":81,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.0 - Izu Islands, Japan region\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[138.8392,29.8582,412.88]},\"id\":\"us7000ma80\"}"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":4.1,\"place\":\"south of the Kermadec Islands\",\"time\":1711862916921,\"updated\":1717278952040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000ma7s\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000ma7s&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":null,\"alert\":null,\"status\":\"reviewed\",\"tsunami\":0,\"sig\":259,\"net\":\"us\",\"code\":\"7000ma7s\",\"ids\":\",us7000ma7s,\",\"sources\":\",us,\",\"types\":\",origin,phase-data,\",\"nst\":22,\"dmin\":3.906,\"rms\":0.59,\"gap\":97,\"magType\":\"mb\",\"type\":\"earthquake\",\"title\":\"M 4.1 - south of the Kermadec Islands\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[179.7932,-32.6491,179.556]},\"id\":\"us7000ma7s\"}"
+  },
+  {
+    "format": "csv",
+    "data": "2024-06-30T21:46:28.012Z,63.8667,-148.8874,5,1.7,ml,,,,1.04,ak,ak0248dcl6og,2024-08-09T21:48:29.131Z,\"4 km ENE of Healy, Alaska\",earthquake,,0.2,,,reviewed,ak,ak"
+  },
+  {
+    "format": "geojson",
+    "data": "{\"type\":\"Feature\",\"properties\":{\"mag\":5.9,\"place\":\"Balleny Islands region\",\"time\":1711904511297,\"updated\":1717278950040,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us7000m936\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m936&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":0,\"alert\":\"green\",\"status\":\"reviewed\",\"tsunami\":0,\"sig\":536,\"net\":\"us\",\"code\":\"7000m936\",\"ids\":\",usauto7000m936,pt24091000,us7000m936,\",\"sources\":\",usauto,pt,us,\",\"types\":\",internal-moment-tensor,internal-origin,losspager,moment-tensor,origin,phase-data,shakemap,\",\"nst\":47,\"dmin\":8.384,\"rms\":0.55,\"gap\":100,\"magType\":\"mww\",\"type\":\"earthquake\",\"title\":\"M 5.9 - Balleny Islands region\"},\"geometry\":{\"type\":\"Point\",\"coordinates\":[156.0408,-62.7208,10]},\"id\":\"us7000m936\"}"
+  }
+]

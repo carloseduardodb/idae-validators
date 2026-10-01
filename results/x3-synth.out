@@ -1,0 +1,17 @@
+jobs: 80  |  já feitos: 0  |  a fazer: 80
+  10/80  ok=10 falhas=0
+  20/80  ok=20 falhas=0
+  30/80  ok=30 falhas=0
+  40/80  ok=40 falhas=0
+  50/80  ok=50 falhas=0
+  60/80  ok=60 falhas=0
+  70/80  ok=70 falhas=0
+  80/80  ok=80 falhas=0
+fim: ok=80 falhas=0 arquivos=80 {
+  calls: 80,
+  promptChars: 281884,
+  responseChars: 254713,
+  errors: 0,
+  ms: 862313,
+  estTokens: 134149
+}

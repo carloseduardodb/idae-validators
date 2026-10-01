@@ -1,0 +1,1162 @@
+{
+  "generatedAt": "2026-09-30T21:21:55.886Z",
+  "node": "v22.22.0",
+  "result": {
+    "financial": {
+      "V0": {
+        "n": 90,
+        "medianUs": 1.032,
+        "p95Us": 5.34,
+        "extraRunsMean": 0,
+        "loc": 12,
+        "llmCallsToCreate": 0
+      },
+      "V1": {
+        "n": 90,
+        "medianUs": 1.092,
+        "p95Us": 1.714,
+        "extraRunsMean": 0,
+        "llmCallsToCreate": 0
+      },
+      "V2": {
+        "n": 90,
+        "medianUs": 50.165,
+        "p95Us": 146.777,
+        "extraRunsMean": 0,
+        "loc": 276,
+        "llmCallsToCreate": 0,
+        "note": "LOC do módulo inteiro (V2 e V3 compartilham helpers)"
+      },
+      "V3": {
+        "n": 90,
+        "medianUs": 726.542,
+        "p95Us": 938.492,
+        "extraRunsMean": 5.666666666666667,
+        "llmCallsToCreate": 0
+      },
+      "V23": {
+        "n": 90,
+        "medianUs": 796.043,
+        "p95Us": 1019.856,
+        "extraRunsMean": 5.666666666666667
+      },
+      "L:financial:claude-haiku-4.5-01": {
+        "n": 90,
+        "medianUs": 108.625,
+        "p95Us": 188.646,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-02": {
+        "n": 90,
+        "medianUs": 107.142,
+        "p95Us": 181.353,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-03": {
+        "n": 90,
+        "medianUs": 112.132,
+        "p95Us": 175.03,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-04": {
+        "n": 90,
+        "medianUs": 112.292,
+        "p95Us": 209.095,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-05": {
+        "n": 90,
+        "medianUs": 110.078,
+        "p95Us": 175.221,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-06": {
+        "n": 90,
+        "medianUs": 107.984,
+        "p95Us": 150.234,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-07": {
+        "n": 90,
+        "medianUs": 107.142,
+        "p95Us": 167.206,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-08": {
+        "n": 90,
+        "medianUs": 112.212,
+        "p95Us": 165.662,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-09": {
+        "n": 90,
+        "medianUs": 104.979,
+        "p95Us": 148.029,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-haiku-4.5-10": {
+        "n": 90,
+        "medianUs": 119.816,
+        "p95Us": 182.735,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-01": {
+        "n": 90,
+        "medianUs": 118.133,
+        "p95Us": 209.957,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-02": {
+        "n": 90,
+        "medianUs": 117.873,
+        "p95Us": 194.397,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-03": {
+        "n": 90,
+        "medianUs": 120.387,
+        "p95Us": 197.984,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-04": {
+        "n": 90,
+        "medianUs": 148.33,
+        "p95Us": 196.851,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-05": {
+        "n": 90,
+        "medianUs": 123.964,
+        "p95Us": 173.808,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-06": {
+        "n": 90,
+        "medianUs": 114.857,
+        "p95Us": 186.192,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-07": {
+        "n": 90,
+        "medianUs": 109.456,
+        "p95Us": 264.509,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-08": {
+        "n": 90,
+        "medianUs": 115.589,
+        "p95Us": 191.872,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-09": {
+        "n": 90,
+        "medianUs": 122.351,
+        "p95Us": 198.765,
+        "extraRunsMean": 0
+      },
+      "L:financial:claude-opus-4.5-10": {
+        "n": 90,
+        "medianUs": 109.737,
+        "p95Us": 190.61,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-01": {
+        "n": 90,
+        "medianUs": 111.28,
+        "p95Us": 265.552,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-02": {
+        "n": 90,
+        "medianUs": 108.495,
+        "p95Us": 194.768,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-03": {
+        "n": 90,
+        "medianUs": 107.453,
+        "p95Us": 156.655,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-04": {
+        "n": 90,
+        "medianUs": 108.966,
+        "p95Us": 204.546,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-05": {
+        "n": 90,
+        "medianUs": 113.906,
+        "p95Us": 205.088,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-06": {
+        "n": 90,
+        "medianUs": 102.082,
+        "p95Us": 170.743,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-07": {
+        "n": 90,
+        "medianUs": 109.086,
+        "p95Us": 167.667,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-08": {
+        "n": 90,
+        "medianUs": 107.884,
+        "p95Us": 165.012,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-09": {
+        "n": 90,
+        "medianUs": 109.266,
+        "p95Us": 170.592,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-haiku-4.5-10": {
+        "n": 90,
+        "medianUs": 110.519,
+        "p95Us": 150.274,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-01": {
+        "n": 90,
+        "medianUs": 114.366,
+        "p95Us": 224.464,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-02": {
+        "n": 90,
+        "medianUs": 113.234,
+        "p95Us": 179.629,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-03": {
+        "n": 90,
+        "medianUs": 120.838,
+        "p95Us": 197.733,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-04": {
+        "n": 90,
+        "medianUs": 128.934,
+        "p95Us": 261.714,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-05": {
+        "n": 90,
+        "medianUs": 140.615,
+        "p95Us": 259.931,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-06": {
+        "n": 90,
+        "medianUs": 117.511,
+        "p95Us": 223.412,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-07": {
+        "n": 90,
+        "medianUs": 117.041,
+        "p95Us": 190.921,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-08": {
+        "n": 90,
+        "medianUs": 114.225,
+        "p95Us": 202.232,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-09": {
+        "n": 90,
+        "medianUs": 125.708,
+        "p95Us": 204.136,
+        "extraRunsMean": 0
+      },
+      "I:financial:claude-opus-4.5-10": {
+        "n": 90,
+        "medianUs": 117.552,
+        "p95Us": 198.786,
+        "extraRunsMean": 0
+      },
+      "V4": {
+        "n": 90,
+        "medianUs": 146.637,
+        "p95Us": 240.514,
+        "extraRunsMean": 1,
+        "llmCallsToCreate": "uma síntese extra por formato"
+      },
+      "llmLocMedian": 53,
+      "iterLocMedian": 72,
+      "iterCallsMean": 4.3
+    },
+    "iot": {
+      "V0": {
+        "n": 105,
+        "medianUs": 0.792,
+        "p95Us": 2.945,
+        "extraRunsMean": 0,
+        "loc": 12,
+        "llmCallsToCreate": 0
+      },
+      "V1": {
+        "n": 105,
+        "medianUs": 0.982,
+        "p95Us": 1.473,
+        "extraRunsMean": 0,
+        "llmCallsToCreate": 0
+      },
+      "V2": {
+        "n": 105,
+        "medianUs": 58.691,
+        "p95Us": 238.16,
+        "extraRunsMean": 0,
+        "loc": 299,
+        "llmCallsToCreate": 0,
+        "note": "LOC do módulo inteiro (V2 e V3 compartilham helpers)"
+      },
+      "V3": {
+        "n": 105,
+        "medianUs": 626.333,
+        "p95Us": 782.217,
+        "extraRunsMean": 5,
+        "llmCallsToCreate": 0
+      },
+      "V23": {
+        "n": 105,
+        "medianUs": 650.579,
+        "p95Us": 1033.993,
+        "extraRunsMean": 5
+      },
+      "L:iot:claude-haiku-4.5-01": {
+        "n": 105,
+        "medianUs": 108.465,
+        "p95Us": 174.459,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-02": {
+        "n": 105,
+        "medianUs": 98.726,
+        "p95Us": 171.524,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-03": {
+        "n": 105,
+        "medianUs": 99.768,
+        "p95Us": 175.732,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-04": {
+        "n": 105,
+        "medianUs": 99.538,
+        "p95Us": 187.875,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-05": {
+        "n": 105,
+        "medianUs": 95.53,
+        "p95Us": 170.742,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-06": {
+        "n": 105,
+        "medianUs": 100.971,
+        "p95Us": 134.363,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-07": {
+        "n": 105,
+        "medianUs": 102.434,
+        "p95Us": 158.79,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-08": {
+        "n": 105,
+        "medianUs": 106.761,
+        "p95Us": 196.091,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-09": {
+        "n": 105,
+        "medianUs": 99.558,
+        "p95Us": 146.817,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-haiku-4.5-10": {
+        "n": 105,
+        "medianUs": 122.441,
+        "p95Us": 204.566,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-01": {
+        "n": 105,
+        "medianUs": 105.299,
+        "p95Us": 186.572,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-02": {
+        "n": 105,
+        "medianUs": 107.634,
+        "p95Us": 166.936,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-03": {
+        "n": 105,
+        "medianUs": 100.721,
+        "p95Us": 154.953,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-04": {
+        "n": 105,
+        "medianUs": 104.948,
+        "p95Us": 191.472,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-05": {
+        "n": 105,
+        "medianUs": 107.593,
+        "p95Us": 184.048,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-06": {
+        "n": 105,
+        "medianUs": 112.272,
+        "p95Us": 196.571,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-07": {
+        "n": 105,
+        "medianUs": 104.577,
+        "p95Us": 159.472,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-08": {
+        "n": 105,
+        "medianUs": 109.958,
+        "p95Us": 144.653,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-09": {
+        "n": 105,
+        "medianUs": 109.417,
+        "p95Us": 177.615,
+        "extraRunsMean": 0
+      },
+      "L:iot:claude-opus-4.5-10": {
+        "n": 105,
+        "medianUs": 107.372,
+        "p95Us": 137.63,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-01": {
+        "n": 105,
+        "medianUs": 96.573,
+        "p95Us": 202.622,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-02": {
+        "n": 105,
+        "medianUs": 97.895,
+        "p95Us": 121.73,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-03": {
+        "n": 105,
+        "medianUs": 96.994,
+        "p95Us": 116.39,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-04": {
+        "n": 105,
+        "medianUs": 97.404,
+        "p95Us": 203.364,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-05": {
+        "n": 105,
+        "medianUs": 100.78,
+        "p95Us": 170.342,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-06": {
+        "n": 105,
+        "medianUs": 99.387,
+        "p95Us": 165.753,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-07": {
+        "n": 105,
+        "medianUs": 103.426,
+        "p95Us": 167.787,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-08": {
+        "n": 105,
+        "medianUs": 108.765,
+        "p95Us": 159.892,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-09": {
+        "n": 105,
+        "medianUs": 98.165,
+        "p95Us": 154.191,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-haiku-4.5-10": {
+        "n": 105,
+        "medianUs": 120.016,
+        "p95Us": 181.853,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-01": {
+        "n": 105,
+        "medianUs": 106.351,
+        "p95Us": 170.712,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-02": {
+        "n": 105,
+        "medianUs": 109.476,
+        "p95Us": 171.463,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-03": {
+        "n": 105,
+        "medianUs": 107.172,
+        "p95Us": 191.571,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-04": {
+        "n": 105,
+        "medianUs": 106.221,
+        "p95Us": 175.361,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-05": {
+        "n": 105,
+        "medianUs": 106.811,
+        "p95Us": 183.987,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-06": {
+        "n": 105,
+        "medianUs": 131.609,
+        "p95Us": 219.134,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-07": {
+        "n": 105,
+        "medianUs": 107.923,
+        "p95Us": 144.793,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-08": {
+        "n": 105,
+        "medianUs": 110.989,
+        "p95Us": 166.995,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-09": {
+        "n": 105,
+        "medianUs": 138.732,
+        "p95Us": 198.204,
+        "extraRunsMean": 0
+      },
+      "I:iot:claude-opus-4.5-10": {
+        "n": 105,
+        "medianUs": 111.07,
+        "p95Us": 190.479,
+        "extraRunsMean": 0
+      },
+      "V4": {
+        "n": 100,
+        "medianUs": 143.591,
+        "p95Us": 184.99,
+        "extraRunsMean": 1,
+        "llmCallsToCreate": "uma síntese extra por formato"
+      },
+      "llmLocMedian": 54,
+      "iterLocMedian": 71,
+      "iterCallsMean": 4.65
+    },
+    "usgs-corrected": {
+      "V0": {
+        "n": 15,
+        "medianUs": 1.773,
+        "p95Us": 89.73,
+        "extraRunsMean": 0,
+        "loc": 6,
+        "llmCallsToCreate": 0
+      },
+      "V1": {
+        "n": 15,
+        "medianUs": 0.912,
+        "p95Us": 17.623,
+        "extraRunsMean": 0,
+        "llmCallsToCreate": 0
+      },
+      "V2": {
+        "n": 15,
+        "medianUs": 106.061,
+        "p95Us": 1290.447,
+        "extraRunsMean": 0,
+        "loc": 301,
+        "llmCallsToCreate": 0,
+        "note": "LOC do módulo inteiro (V2 e V3 compartilham helpers)"
+      },
+      "V3": {
+        "n": 15,
+        "medianUs": 688.029,
+        "p95Us": 1319.251,
+        "extraRunsMean": 5,
+        "llmCallsToCreate": 0
+      },
+      "V23": {
+        "n": 15,
+        "medianUs": 667.35,
+        "p95Us": 868.13,
+        "extraRunsMean": 5
+      },
+      "L:usgs-corrected:claude-haiku-4.5-01": {
+        "n": 15,
+        "medianUs": 114.386,
+        "p95Us": 182.305,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-02": {
+        "n": 15,
+        "medianUs": 115.949,
+        "p95Us": 247.808,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-03": {
+        "n": 15,
+        "medianUs": 121.149,
+        "p95Us": 205.548,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-04": {
+        "n": 15,
+        "medianUs": 115.278,
+        "p95Us": 204.487,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-05": {
+        "n": 15,
+        "medianUs": 110.329,
+        "p95Us": 453.727,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-06": {
+        "n": 15,
+        "medianUs": 128.723,
+        "p95Us": 276.693,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-07": {
+        "n": 15,
+        "medianUs": 116.47,
+        "p95Us": 181.753,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-08": {
+        "n": 15,
+        "medianUs": 113.695,
+        "p95Us": 189.739,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-09": {
+        "n": 15,
+        "medianUs": 119.445,
+        "p95Us": 250.243,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-haiku-4.5-10": {
+        "n": 15,
+        "medianUs": 105.529,
+        "p95Us": 227.35,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-01": {
+        "n": 15,
+        "medianUs": 107.092,
+        "p95Us": 159.912,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-02": {
+        "n": 15,
+        "medianUs": 144.183,
+        "p95Us": 218.492,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-03": {
+        "n": 15,
+        "medianUs": 120.779,
+        "p95Us": 196.23,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-04": {
+        "n": 15,
+        "medianUs": 112.513,
+        "p95Us": 156.406,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-05": {
+        "n": 15,
+        "medianUs": 108.404,
+        "p95Us": 247.637,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-06": {
+        "n": 15,
+        "medianUs": 113.264,
+        "p95Us": 159.832,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-07": {
+        "n": 15,
+        "medianUs": 106.892,
+        "p95Us": 152.338,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-08": {
+        "n": 15,
+        "medianUs": 111.381,
+        "p95Us": 209.105,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-09": {
+        "n": 15,
+        "medianUs": 108.625,
+        "p95Us": 141.227,
+        "extraRunsMean": 0
+      },
+      "L:usgs-corrected:claude-opus-4.5-10": {
+        "n": 15,
+        "medianUs": 107.353,
+        "p95Us": 159.852,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-01": {
+        "n": 15,
+        "medianUs": 113.625,
+        "p95Us": 340.463,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-02": {
+        "n": 15,
+        "medianUs": 112.232,
+        "p95Us": 226.337,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-03": {
+        "n": 15,
+        "medianUs": 123.844,
+        "p95Us": 233.982,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-04": {
+        "n": 15,
+        "medianUs": 112.433,
+        "p95Us": 210.898,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-05": {
+        "n": 15,
+        "medianUs": 108.234,
+        "p95Us": 211.209,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-06": {
+        "n": 15,
+        "medianUs": 113.945,
+        "p95Us": 162.928,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-07": {
+        "n": 15,
+        "medianUs": 108.645,
+        "p95Us": 160.253,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-08": {
+        "n": 15,
+        "medianUs": 106.702,
+        "p95Us": 200.809,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-09": {
+        "n": 15,
+        "medianUs": 118.594,
+        "p95Us": 192.564,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-haiku-4.5-10": {
+        "n": 15,
+        "medianUs": 112.623,
+        "p95Us": 207.462,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-01": {
+        "n": 15,
+        "medianUs": 103.055,
+        "p95Us": 136.127,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-02": {
+        "n": 15,
+        "medianUs": 227.319,
+        "p95Us": 424.662,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-03": {
+        "n": 15,
+        "medianUs": 152.839,
+        "p95Us": 318.1,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-04": {
+        "n": 15,
+        "medianUs": 119.596,
+        "p95Us": 249.922,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-05": {
+        "n": 15,
+        "medianUs": 174.068,
+        "p95Us": 355.511,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-06": {
+        "n": 15,
+        "medianUs": 122.531,
+        "p95Us": 214.915,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-07": {
+        "n": 15,
+        "medianUs": 250.282,
+        "p95Us": 771.057,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-08": {
+        "n": 15,
+        "medianUs": 190.991,
+        "p95Us": 444.069,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-09": {
+        "n": 15,
+        "medianUs": 123.804,
+        "p95Us": 170.071,
+        "extraRunsMean": 0
+      },
+      "I:usgs-corrected:claude-opus-4.5-10": {
+        "n": 15,
+        "medianUs": 146.036,
+        "p95Us": 193.676,
+        "extraRunsMean": 0
+      },
+      "V4": {
+        "n": 15,
+        "medianUs": 170.232,
+        "p95Us": 255.112,
+        "extraRunsMean": 1,
+        "llmCallsToCreate": "uma síntese extra por formato"
+      },
+      "llmLocMedian": 88,
+      "iterLocMedian": 89,
+      "iterCallsMean": 2.7
+    },
+    "usgs-strict": {
+      "V0": {
+        "n": 15,
+        "medianUs": 0.701,
+        "p95Us": 38.212,
+        "extraRunsMean": 0,
+        "loc": 6,
+        "llmCallsToCreate": 0
+      },
+      "V1": {
+        "n": 15,
+        "medianUs": 0.802,
+        "p95Us": 14.577,
+        "extraRunsMean": 0,
+        "llmCallsToCreate": 0
+      },
+      "V2": {
+        "n": 15,
+        "medianUs": 60.664,
+        "p95Us": 913.084,
+        "extraRunsMean": 0,
+        "loc": 301,
+        "llmCallsToCreate": 0,
+        "note": "LOC do módulo inteiro (V2 e V3 compartilham helpers)"
+      },
+      "V3": {
+        "n": 15,
+        "medianUs": 680.124,
+        "p95Us": 1268.255,
+        "extraRunsMean": 5,
+        "llmCallsToCreate": 0
+      },
+      "V23": {
+        "n": 15,
+        "medianUs": 702.918,
+        "p95Us": 779.652,
+        "extraRunsMean": 5
+      },
+      "L:usgs-strict:claude-haiku-4.5-01": {
+        "n": 15,
+        "medianUs": 111.4,
+        "p95Us": 279.387,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-02": {
+        "n": 15,
+        "medianUs": 132.099,
+        "p95Us": 357.375,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-03": {
+        "n": 15,
+        "medianUs": 123.253,
+        "p95Us": 248.499,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-04": {
+        "n": 15,
+        "medianUs": 110.519,
+        "p95Us": 177.746,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-05": {
+        "n": 15,
+        "medianUs": 101.993,
+        "p95Us": 126.529,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-06": {
+        "n": 15,
+        "medianUs": 109.016,
+        "p95Us": 337.828,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-07": {
+        "n": 15,
+        "medianUs": 111.581,
+        "p95Us": 172.876,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-08": {
+        "n": 15,
+        "medianUs": 109.968,
+        "p95Us": 214.325,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-09": {
+        "n": 15,
+        "medianUs": 107.524,
+        "p95Us": 161.635,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-haiku-4.5-10": {
+        "n": 15,
+        "medianUs": 107.873,
+        "p95Us": 268.437,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-01": {
+        "n": 15,
+        "medianUs": 104.457,
+        "p95Us": 137.62,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-02": {
+        "n": 15,
+        "medianUs": 105.92,
+        "p95Us": 156.846,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-03": {
+        "n": 15,
+        "medianUs": 108.385,
+        "p95Us": 231.948,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-04": {
+        "n": 15,
+        "medianUs": 617.336,
+        "p95Us": 869.542,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-05": {
+        "n": 15,
+        "medianUs": 132.59,
+        "p95Us": 191.341,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-06": {
+        "n": 15,
+        "medianUs": 107.843,
+        "p95Us": 143.31,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-07": {
+        "n": 15,
+        "medianUs": 105.319,
+        "p95Us": 169.08,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-08": {
+        "n": 15,
+        "medianUs": 101.592,
+        "p95Us": 124.325,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-09": {
+        "n": 15,
+        "medianUs": 99.357,
+        "p95Us": 193.306,
+        "extraRunsMean": 0
+      },
+      "L:usgs-strict:claude-opus-4.5-10": {
+        "n": 15,
+        "medianUs": 106.662,
+        "p95Us": 175.762,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-01": {
+        "n": 15,
+        "medianUs": 107.673,
+        "p95Us": 176.934,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-02": {
+        "n": 15,
+        "medianUs": 109.637,
+        "p95Us": 188.556,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-03": {
+        "n": 15,
+        "medianUs": 109.276,
+        "p95Us": 148.931,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-04": {
+        "n": 15,
+        "medianUs": 114.166,
+        "p95Us": 336.836,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-05": {
+        "n": 15,
+        "medianUs": 109.356,
+        "p95Us": 160.623,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-06": {
+        "n": 15,
+        "medianUs": 108.665,
+        "p95Us": 164.491,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-07": {
+        "n": 15,
+        "medianUs": 115.909,
+        "p95Us": 207.202,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-08": {
+        "n": 15,
+        "medianUs": 102.513,
+        "p95Us": 181.893,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-09": {
+        "n": 15,
+        "medianUs": 102.083,
+        "p95Us": 173.778,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-haiku-4.5-10": {
+        "n": 15,
+        "medianUs": 104.968,
+        "p95Us": 231.588,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-01": {
+        "n": 15,
+        "medianUs": 105.86,
+        "p95Us": 135.857,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-02": {
+        "n": 15,
+        "medianUs": 114.015,
+        "p95Us": 277.545,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-03": {
+        "n": 15,
+        "medianUs": 103.796,
+        "p95Us": 139.002,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-04": {
+        "n": 15,
+        "medianUs": 580.356,
+        "p95Us": 721.953,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-05": {
+        "n": 15,
+        "medianUs": 117.763,
+        "p95Us": 167.557,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-06": {
+        "n": 15,
+        "medianUs": 100.079,
+        "p95Us": 136.337,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-07": {
+        "n": 15,
+        "medianUs": 104.096,
+        "p95Us": 128.432,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-08": {
+        "n": 15,
+        "medianUs": 99.558,
+        "p95Us": 151.386,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-09": {
+        "n": 15,
+        "medianUs": 99.748,
+        "p95Us": 130.877,
+        "extraRunsMean": 0
+      },
+      "I:usgs-strict:claude-opus-4.5-10": {
+        "n": 15,
+        "medianUs": 98.426,
+        "p95Us": 140.665,
+        "extraRunsMean": 0
+      },
+      "V4": {
+        "n": 15,
+        "medianUs": 188.035,
+        "p95Us": 223.933,
+        "extraRunsMean": 1,
+        "llmCallsToCreate": "uma síntese extra por formato"
+      },
+      "llmLocMedian": 39,
+      "iterLocMedian": 45,
+      "iterCallsMean": 1.6
+    }
+  }
+}

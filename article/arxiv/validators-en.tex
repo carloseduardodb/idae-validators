@@ -1,0 +1,505 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\setcopyright{none}
+\emergencystretch=2em
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xurl}
+
+\begin{document}
+
+\title[How Strong Is Your Validator?]{How Strong Is Your Validator? Measuring Acceptance Gates for LLM-Synthesized Programs}
+
+\author{Carlos Eduardo Dias Batista}
+\orcid{0009-0005-5726-0289}
+\affiliation{
+  \institution{Independent Researcher}
+  \country{Brazil}
+}
+
+\renewcommand{\shortauthors}{Batista}
+
+\begin{abstract}
+Architectures that let an LLM synthesize disposable programs and accept their outputs through an immutable validator are only as strong as the validator. A previous study of such an architecture (IDAE) showed that format-level validators let well-formed but wrong outputs through, and that one faulty program then corrupts every record of its format. This paper asks how to build a stronger validator and how to measure its strength before deployment. We assemble a corpus of 1{,}068 unique programs actually synthesized by Claude Opus 4.5 and Claude Haiku 4.5 for three data-extraction domains with a per-record ground-truth oracle; 70 of them are defective, with 23 distinct faulty behaviors (misread number conventions, time-zone and epoch errors, guessed values for missing fields, fabricated fields under an unsatisfiable specification). We compare format validators, source-anchored validators, property validators that relate the output to the raw input, metamorphic validators, N-version agreement, and 80 validators written by the LLMs themselves. Property validators written from the specification alone, without access to the corpus, caught 21 of the 23 faulty behaviors (format validators: 6), rejecting 0.4\% of correct outputs. N-version agreement caught 78--100\% but rejected 8--27\% of correct outputs. LLM-written validators traded silent corruption for false rejection: only 1 of 10 Opus 4.5 and 0 of 10 Haiku 4.5 validators kept false rejection at or below 1\% in the financial domain. Letting the same models revise their validators for up to five rounds against automatic self-checks on the specification's examples did not close the gap: in the financial and IoT domains, 4 of 40 validators were usable before and 4 of 40 after, because validators tuned to one example per format still rejected correct records the examples did not cover. A gate that requires each new program to reproduce a few verified input--output pairs of its format never rejected a correct program and caught exactly the faults the property validators missed; combined, they caught 96--100\% of the faulty behaviors. A cheap mutation score correlated with strength against real faults (Spearman $\rho = 0.51$, 95\% CI [0.36, 0.66], 100 validators), useful as a screen but not as a substitute. The two faults that escaped the property validators were a plausible re-conversion and an ambiguity in the specification itself, which no validator derived from it can resolve, but a verified example can.
+\end{abstract}
+
+\keywords{LLM, Program Synthesis, Test Oracle, Validator, Metamorphic Testing, N-Version Programming, Mutation Testing, Silent Data Corruption}
+
+\frenchspacing
+\maketitle
+
+\noindent\textit{This English version is archived at} \url{https://doi.org/10.5281/zenodo.23074533}\textit{; the original Portuguese version is archived at} \url{https://doi.org/10.5281/zenodo.23074364}.\\
+\textbf{Artifacts:} \url{https://github.com/carloseduardodb/idae-validators}
+
+\section{Introduction}
+
+An increasingly common way of using LLMs in software engineering is to ask the model for a \textit{program} instead of the \textit{answer}: the program is generated once, checked, and reused. IDAE (\textit{Intent-Driven Adaptive Extraction}) \cite{batista2026idae} applies this idea to data extraction: for each input format, an LLM synthesizes a disposable program; a validator derived from an immutable specification (the \textit{telos}) decides whether each output can be accepted; the approved program is reused for every record of the same format. Cost drops by two orders of magnitude compared with calling the LLM per record.
+
+The evaluation of IDAE against a per-record ground-truth oracle showed the price of this saving: \textbf{the system's guarantee is exactly the strength of its validator}. A validator that checks types, ranges and formats, like IDAE's telos validator, cannot tell whether a well-formed value is right. When a program reads \texttt{"3440.04"} as a Brazilian-formatted number and returns 344004, the validator accepts it, and amortization repeats the error in every record of that format. This is the oracle problem of software testing \cite{barr2015oracle}, now on the critical path of production.
+
+This paper addresses the next question: \textbf{how should one build a validator for LLM-synthesized programs, and how can one measure, before deployment, how much it guarantees?} We answer five research questions:
+
+\begin{itemize}
+\item \textbf{RQ1 (strength):} how many of the faults that LLMs actually make does each validator strategy let through, and how many correct outputs does it reject?
+\item \textbf{RQ2 (cheap measure):} does a validator's mutation score, obtained without an LLM and without a production oracle, predict its strength against real faults?
+\item \textbf{RQ3 (LLM-written validator):} is a validator written by the LLM itself from the specification as good as one written with care? Does it improve if the LLM can revise it through self-checking? Are the errors of validator and program correlated when both come from the same model?
+\item \textbf{RQ4 (cost):} how much does each strategy cost in checking time, extra executions and LLM calls?
+\item \textbf{RQ5 (verified pairs):} if each format has a few verified input--output pairs, and the format does not change while in use, how much does a gate that requires reproducing those pairs add to a validator?
+\end{itemize}
+
+\subsection{Contributions}
+
+\begin{enumerate}
+\item \textbf{A corpus of real faults} of LLM-synthesized programs: 1{,}068 unique programs from Claude Opus 4.5 and Haiku 4.5, re-executed against a per-record oracle, with 23 distinct faulty behaviors organized into a taxonomy (Sections~\ref{sec:corpus} and \ref{sec:rq1}).
+\item \textbf{A comparison of six validator strategies} on the same yardstick (format, source-anchored, property, metamorphic, N-version \cite{avizienis1985nversion} and LLM-written), measuring both silent corruption and false rejection.
+\item \textbf{Evidence that input--output relations derived from the specification} catch 21 of 23 faulty behaviors with 0.4\% false rejection, written without seeing the corpus and frozen before evaluation.
+\item \textbf{Evidence that LLM-written validators} are strong but rarely usable, because they reject correct outputs, and that revising them through self-checks against the specification's examples does not solve the problem.
+\item \textbf{Evidence that verified pairs and input--output relations are complementary:} a few verified pairs per format catch the faults the relations cannot distinguish, the relations catch those that only appear in edge cases, and together they catch 96\% to 100\% of the faulty behaviors without rejecting any correct program.
+\item \textbf{An evaluation of mutation score as a screen} for validator strength, with a moderate positive correlation against real faults.
+\end{enumerate}
+
+\section{Background}
+\label{sec:contexto}
+
+\subsection{The validator as a gate}
+
+In IDAE, a program $\sigma$ synthesized for a format is applied to each record $x$ of that format. The output $\sigma(x)$ is accepted only if $V(\sigma(x), x) = \text{True}$; if the validator rejects the output, the program is discarded and another one is synthesized. A program may also return \texttt{null}, rejecting the record on its own. We call \textit{silent corruption} an accepted output that differs from the truth (or that is accepted when the record should have been rejected), and \textit{false rejection} a correct output that is rejected. Silent corruption is multiplied by amortization; false rejection costs a new synthesis and, in the limit, exhausts the retry budget and rejects an entire format.
+
+\subsection{Validator strategies}
+
+\textbf{Format (V0).} Checks the types, ranges and formats of the output, like a contract \cite{meyer1997object}. This is IDAE's telos validator.
+
+\textbf{Source-anchored (V1).} V0 plus the requirement that the output's identifier appear literally in the input. Proposed in IDAE against fabricated identifiers.
+
+\textbf{Property (V2).} V0 plus relations between the output and the raw input, derived from the specification: every number in the output must be explainable by a number in the input under the allowed conversions; derived fields must be consistent; dates must correspond to dates present in the input; if the specification requires rejection when a piece of data is missing, the input must contain evidence of that data. This is property-based testing \cite{claessen2000quickcheck} applied in production, to every output.
+
+\textbf{Metamorphic (V3).} V0 plus metamorphic relations \cite{chen1998metamorphic,segura2016survey}: the validator re-runs the same program on transformed inputs (identifier swapped, value doubled, date shifted) and checks whether the output changes as the specification implies.
+
+\textbf{N-version (V4).} V0 plus agreement with a second program synthesized independently for the same format \cite{avizienis1985nversion,ron2024galapagos}. The assumption of failure independence is known to be fragile \cite{knight1986experimental}.
+
+\textbf{LLM-written (L).} The LLM itself receives the specification and examples and writes the validator, as in approaches that generate tests or judges with the model itself \cite{chen2022codet,zheng2023judging}.
+
+\section{Study Design}
+\label{sec:desenho}
+
+\subsection{Domains and oracle}
+
+We use IDAE's three domains: financial (transactions in four currencies, with conversion to USD, UTC date and category), IoT (telemetry with unit conversion, UTC timestamp and derived status) and 560 real seismic events from the USGS, with two telos: the \textit{corrected} one and the \textit{strict} one, which requires a field absent from the USGS CSV and therefore forces those records to be rejected. Every record carries its ground truth: the exact expected output, or ``must be rejected''.
+
+To the six formats of each synthetic IDAE domain we add five new phases: key=value with a currency symbol and varying time zones, nested JSON with epoch timestamps, XML, JSON with value and unit in the same field, and an adversarial phase over these formats (7 variants to reject and 3 acceptable but tricky ones). Each new phase has its own format signature and does not alter the records of the original phases. The evaluation stream uses IDAE's seed (1001), with 100 records per phase and 50 in the adversarial ones.
+
+\subsection{Corpus of synthesized programs}
+\label{sec:corpus}
+
+The corpus has two sources: (i) IDAE's JSONL logs, with every program-synthesis response under the final telos (1{,}570 responses), and (ii) a new round with IDAE's synthesis prompt, copied unchanged, over the old and new formats: three samples per format signature, one per prompt, for each model (Claude Opus 4.5 and Haiku 4.5), and four samples per USGS format under both telos (182 calls, no failures). The new-round samples come from a stream with a seed different from the evaluation one (3001), so that no program is evaluated on the record it saw.
+
+Each response is normalized (comments and whitespace removed) and deduplicated by domain, signature and code hash. Each program is re-executed, isolated and with a time limit, over every record of its signature, which are the records IDAE would apply it to through amortization. The per-record result, independent of any validator, is \textit{right}, \textit{wrong} (output differs from the truth, or output when it should reject) or \textit{missing} (\texttt{null} or error when it should accept). A program is \textit{defective} if it produces at least one wrong output. Because many textually different programs fail on exactly the same records, we group programs by \textit{behavior} (the per-record result vector and the wrong fields) and report the main results per distinct behavior.
+
+Table~\ref{tab:corpus} summarizes the corpus. All 1{,}068 unique programs compile; 70 are defective and form 23 distinct faulty behaviors. Haiku 4.5 produced 25 defective programs out of 106; Opus 4.5, 45 out of 962. By behavior, 13 of the 23 come only from Haiku, 7 only from Opus and 3 appear in both.
+
+\begin{table}[t]
+\caption{Corpus of synthesized programs (unique programs by domain and label against the oracle).}
+\label{tab:corpus}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Domain & Progr. & Correct & Incompl. & Defect. \\
+\midrule
+Financial & 549 & 474 & 27 & 48 \\
+IoT & 476 & 457 & 10 & 9 \\
+USGS corrected & 22 & 20 & 0 & 2 \\
+USGS strict & 21 & 10 & 0 & 11 \\
+\midrule
+Total & 1{,}068 & 961 & 37 & 70 \\
+\quad distinct behaviors & & 27 & 15 & 23 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Validators under evaluation}
+
+V0 and V1 are IDAE's validators, unchanged. V2 and V3 were written for this study \textbf{without access to the corpus}: an instance of an AI assistant (Claude Opus 5.5, a newer model than those studied), isolated in a folder containing only each domain's specification, one \textit{normal} input example per format and the code of V0, wrote both validators under explicit constraints: treat the input as an opaque string (without relying on field names, delimiters or column positions from the examples, since new formats appear), do not reimplement the transformation, and never reject a correct output of the examples. The instance derived the correct output of each example by hand and wrote a self-check script (109 assertions) against which it iterated. The code was frozen with a SHA-256 hash in version control before the first run against the corpus. The author and the main assistant had already seen the corpus faults when V2 and V3 were commissioned; this is why the writing was delegated to an instance without that context.
+
+V4 uses as partner another corpus program with the same domain, signature and model; since the result depends on which partner is drawn, we report three partners spread across the corpus (V4-1 to V4-3). There are 80 LLM-written validators (L): ten independent implementations per model and domain, requested with the same material the V2 instance received (specification and one normal example per format) and the same constraints, in a single call each; all compiled and were frozen before evaluation.
+
+\textbf{Iterative self-checking (I).} To separate the effect of the process from the effect of the model, each of the 80 L validators was revised by the same model that wrote it, for up to five rounds in total. In each round, the validator is run against the same examples as in the prompt: the correct output of each example (the same information the V2 instance derived by hand) must be accepted, and wrong variants of those outputs should be rejected. The variants come from a generic mutator per field type, with nothing from the corpus: numbers $\times$10, $\div$10 and $+$1; dates $\pm$1 day; timestamps $+$1\,h and $-$1 day; strings replaced by another value of the same field in the examples. The model receives the current code, the rejected correct outputs, up to six accepted variants and any errors, and returns a revised version. The process stops when there are no failures; the final version is the one with the fewest false rejections and then the fewest accepted variants in the self-check. V2 passes this self-check, accepting every correct output and only 1 of the 216 variants. The final versions were also frozen with a hash before evaluation.
+
+\subsection{Metrics}
+
+Each validator decides, for each object output of each program, whether to accept or reject it (a rejection by the program itself does not reach the validator). A defective program is \textit{caught} if the validator rejects at least one of its wrong outputs (in IDAE, this discards the program and triggers a new synthesis) and \textit{cleared} if all of its wrong outputs are rejected. We also report the fraction of wrong outputs rejected and the \textit{false rejection}: the fraction of correct outputs rejected.
+
+\subsection{Mutation}
+
+For RQ2, we apply nine first-order mutation operators to the code of up to six correct programs per signature: numeric literal $\times$10 and $+$1, arithmetic operator swap, comparison boundary, \texttt{getUTC*} replaced by local time, removal of text normalization, removal of a rejection guard (the program starts ``guessing'') and equality inversion \cite{jia2011mutation}. Of the 3{,}525 mutants of 141 programs, 2{,}335 did not change the result, 419 only started rejecting or crashing, and 506 repeated a behavior already seen; 265 mutants remained with a distinct behavior that produces at least one wrong output. A validator's mutation score is the fraction of these mutants it catches. The question is whether this score, which requires no real faults, ranks validators as the real faults do \cite{just2014mutants}.
+
+\subsection{Verified pairs}
+\label{sec:desenho-golden}
+
+For RQ5, we assume that each format (signature) has $k$ records whose output has been verified (or whose rejection has been confirmed), and that the format does not change during the window of use. A program is approved only if it reproduces the truth exactly on all $k$ pairs: the same output on acceptance pairs and \texttt{null} on rejection pairs. If it fails, it is discarded before processing any record. The truth of the pairs comes from the oracle, that is, we assume perfect verification. We compare three compositions of the set: the \textit{first} $k$ records of the format, in stream order (those the program would see first in production); a \textit{random} draw of $k$ records of the format, with exact (hypergeometric) probability; and a \textit{stratified} set, with one record of each type present in the format (normal and each edge case, including those that must be rejected), completed at random, averaged over 500 draws. Each composition is evaluated alone (G) and combined with V0 and with V2: the program is caught if it fails the gate or if the validator rejects at least one of its wrong outputs.
+
+\section{Results}
+
+\subsection{RQ1: Strength against real faults}
+\label{sec:rq1}
+
+Table~\ref{tab:rq1} shows the main result. The format validator (V0) caught 6 of the 23 faulty behaviors; anchoring the identifier in the source (V1) added nothing, because no program in the corpus fabricated identifiers. The property validator (V2) caught 21 of the 23, and rejected every wrong output of those 21, with 0.4\% false rejection. The metamorphic validator (V3) caught 8, and combining it with V2 changed nothing. N-version caught 78\% to 100\% depending on the partner, but rejected 8.2\% to 27.2\% of the correct outputs: whenever the partner is wrong, the correct output is rejected. Partner V4-3 exists for only 15 of the 23 behaviors, because not every format has three programs in the corpus.
+
+\begin{table}[t]
+\caption{Strength of each validator against the 23 real faulty behaviors, with one representative program per behavior (RQ1). ``Wrong rej.'' is the fraction of wrong outputs the validator rejected.}
+\label{tab:rq1}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Validator & Caught & Wrong rej. & False rej. \\
+\midrule
+V0 format & 6/23 (26.1\%) & 34.7\% & 0.0\% \\
+V1 anchored & 6/23 (26.1\%) & 34.7\% & 0.0\% \\
+V2 property & \textbf{21/23 (91.3\%)} & \textbf{95.6\%} & 0.4\% \\
+V3 metamorphic & 8/23 (34.8\%) & 39.3\% & 0.0\% \\
+V2 + V3 & 21/23 (91.3\%) & 95.6\% & 0.4\% \\
+V4-1 N-version & 18/23 (78.3\%) & 61.3\% & 8.2\% \\
+V4-2 N-version & 22/23 (95.7\%) & 69.4\% & 27.2\% \\
+V4-3 N-version & 15/15 (100\%) & 100\% & 10.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Counting unique programs instead of behaviors, the picture is the same: V0 catches 15.7\% of the 70 defective programs and V2 94.3\%, with 0.1\% false rejection.
+
+Table~\ref{tab:taxonomia} organizes the 23 behaviors. V0 only catches faults that break the output format: timestamps with milliseconds outside the telos pattern, and shifted fields when a CSV with a comma inside quotes is split on the comma. Everything else is well-formed: values 100 times too large, dates in 1970, ignored time zones, currencies or timestamps invented for incomplete records, fields fabricated under the strict telos. V2 catches these cases because it checks what V0 cannot: whether the number in the output is explainable by a number in the input, whether the output date corresponds to a date in the input, and whether the input contains the currency or timestamp the output asserts.
+
+\begin{table}[t]
+\caption{Taxonomy of the 23 faulty behaviors and how many each validator catches (O = Opus 4.5 only, H = Haiku 4.5 only, B = both).}
+\label{tab:taxonomia}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.5cm}crrr}
+\toprule
+Fault class & Models & V0 & V2 & V3 \\
+\midrule
+Number read in the wrong convention (``2181.38'' $\to$ 218138) & 2\,H & 0/2 & 2/2 & 0/2 \\
+Time: time zone ignored, epoch in s read as ms & 1\,O, 2\,H & 0/3 & 3/3 & 1/3 \\
+Output outside the telos format (milliseconds) & 3\,H & 3/3 & 3/3 & 3/3 \\
+Value semantics (rounding, unit not converted, double conversion, category) & 2\,O, 1\,H, 1\,B & 0/4 & 2/4 & 0/4 \\
+Guess instead of rejection (missing currency or timestamp) & 1\,O, 2\,H, 1\,B & 0/4 & 4/4 & 0/4 \\
+Field fabricated under an unsatisfiable telos & 3\,O, 2\,H, 1\,B & 2/6 & 6/6 & 3/6 \\
+Parsing (comma inside quotes in CSV) & 1\,H & 1/1 & 1/1 & 1/1 \\
+\midrule
+Total & 7\,O, 13\,H, 3\,B & 6/23 & 21/23 & 8/23 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{What escaped.} The two behaviors V2 missed are in the pre-aggregated financial format, in which the input already carries the USD value and the original currency. One program converted the USD value again, as if it were BRL; the result is still ``a number from the input times the rate of a currency mentioned in the input'', and a generic relation cannot tell the two cases apart. The other derived the category from the currency of the value (USD) instead of the original currency. This second case exposes an \textbf{ambiguity in the specification itself}: the telos says the category is ``domestic if the currency is BRL'', without saying which currency counts when the record carries two. No validator derived from this specification can resolve the ambiguity; IDAE's oracle resolved it by convention.
+
+\subsection{RQ3: Validators written by the LLM itself}
+\label{sec:rq3}
+
+Table~\ref{tab:rq3} summarizes the 80 LLM-written validators. They catch a lot: the median Haiku 4.5 validator catches 88.9\% of the faulty behaviors in the financial domain, more than V2. But they are almost never usable: the median false rejection of Haiku 4.5 is 90.8\% in financial and 51.9\% in IoT, and none of the 20 Haiku validators in these two domains stays below 1\% false rejection. Opus 4.5 is more permissive and therefore catches less; only 1 of 10 Opus validators in financial and 3 of 10 in IoT stay below 1\%. In USGS strict, where requiring the \texttt{sig} field is enough, all 20 are usable, but the median Opus validator catches only 33.3\%.
+
+\textbf{With iterative self-checking.} Revision took 3.3 rounds per validator on average (185 revision calls) and worked \textit{on the examples}: in financial, the Opus 4.5 validators that accept every correct output of the examples went from 2 to 6 out of 10, and the fraction of wrong variants accepted fell from 22.6\% to 0.1\%. Against real faults, almost nothing changed (Table~\ref{tab:rq3}, rows I). The median catches a little more in financial (66.7\% $\to$ 77.8\%) and IoT (71.4\% $\to$ 78.6\%) with Opus, but false rejection remains high: in the financial and IoT domains, 4 of 40 validators were usable before and 4 of 40 after. Haiku 4.5's financial validators still rejected correct outputs of their own examples after five rounds. Only in USGS corrected did revision fix Haiku's false rejection (median from 59.3\% to 0.0\%). Pairing each validator with its revision, 16 of the 80 came to catch more behaviors and 3 fewer; 15 reduced their false rejection and 13 increased it.
+
+The reason is overfitting to the examples. The six Opus 4.5 financial validators that passed the self-check cleanly rejected 11.3\% of the correct outputs in the stream, almost always on normal records of the same formats as the examples. In the key=value format, for instance, one of them rejects every record whose time, converted to UTC, falls on the next day, and accepts all others: the only example of that format does not cross midnight, and the self-check has no way to reveal the wrong rule. V2 had the same examples and did not fall into this. Since iterating on the same examples does not reproduce V2, the remaining difference between V2 and L is the model and the agent's freedom to write its own tests and reason about the specification, not the possibility of iterating.
+
+\begin{table}[t]
+\caption{LLM-written validators in one call (L) and the same validators after iterative self-checking (I), with 10 validators per model and domain (RQ3). ``Caught'' is the median fraction of faulty behaviors caught and ``False rej.'' the median false rejection; ``Usable'' counts validators with false rejection of at most 1\%.}
+\label{tab:rq3}
+\small
+\begin{tabular}{llrrr}
+\toprule
+Domain & Validator & Caught & False rej. & Usable \\
+\midrule
+\multirow{5}{*}{Financial} & V2 & 77.8\% & 0.0\% & --- \\
+ & L Opus 4.5 & 66.7\% & 9.5\% & 1/10 \\
+ & L Haiku 4.5 & 88.9\% & 90.8\% & 0/10 \\
+ & I Opus 4.5 & 77.8\% & 9.2\% & 0/10 \\
+ & I Haiku 4.5 & 88.9\% & 89.1\% & 0/10 \\
+\midrule
+\multirow{5}{*}{IoT} & V2 & 100\% & 1.2\% & --- \\
+ & L Opus 4.5 & 71.4\% & 2.7\% & 3/10 \\
+ & L Haiku 4.5 & 85.7\% & 51.9\% & 0/10 \\
+ & I Opus 4.5 & 78.6\% & 4.2\% & 4/10 \\
+ & I Haiku 4.5 & 85.7\% & 51.9\% & 0/10 \\
+\midrule
+\multirow{5}{*}{USGS corrected} & V2 & 100\% & 0.0\% & --- \\
+ & L Opus 4.5 & 100\% & 0.0\% & 6/10 \\
+ & L Haiku 4.5 & 100\% & 59.3\% & 4/10 \\
+ & I Opus 4.5 & 100\% & 0.0\% & 7/10 \\
+ & I Haiku 4.5 & 100\% & 0.0\% & 6/10 \\
+\midrule
+\multirow{5}{*}{USGS strict} & V2 & 100\% & 0.0\% & --- \\
+ & L Opus 4.5 & 33.3\% & 0.0\% & 10/10 \\
+ & L Haiku 4.5 & 100\% & 0.0\% & 10/10 \\
+ & I Opus 4.5 & 33.3\% & 0.0\% & 10/10 \\
+ & I Haiku 4.5 & 100\% & 0.0\% & 10/10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Correlated errors.} Opus 4.5's validators accepted 69.6\% of the wrong outputs of Opus programs and 20.3\% of Haiku's; Haiku 4.5's, 29.3\% and 11.3\%. Both models accept Opus's errors more, which are subtler, and Opus is more permissive overall. Controlling for both, the interaction odds ratio (how much more lenient each model is, relatively, with its own errors) is 2.76, with a 95\% bootstrap interval of [0.28, 18.2] over the 23 behaviors. With the revised validators (I), the ratio is 5.75 [0.72, 96.8]. The direction is consistent with correlated errors, as in classic N-version programming \cite{knight1986experimental}, but the data do not allow a conclusion.
+
+\subsection{RQ2: Mutation score as a cheap measure}
+
+Table~\ref{tab:rq2} shows the mutation score of the reference validators. The ranking follows that of the real faults at the extremes (V0 weak, V2 strong), but not in the middle: V1 catches 57.4\% of the mutants and no more real faults than V0, because the numeric operators also alter digits of identifiers, something the LLMs in the corpus did not do. N-version reaches 100\% by construction, since the partner is a correct program from which the mutant differs; mutation score overestimates this strategy.
+
+\begin{table}[t]
+\caption{Mutation score over 265 mutants with distinct behavior, compared with strength against real faults (RQ2).}
+\label{tab:rq2}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Validator & Mutants caught & False rej. & Real faults caught \\
+\midrule
+V0 format & 30.9\% & 0.0\% & 26.1\% \\
+V1 anchored & 57.4\% & 0.0\% & 26.1\% \\
+V2 property & 99.6\% & 2.2\% & 91.3\% \\
+V3 metamorphic & 55.1\% & 9.7\% & 34.8\% \\
+V4-1 N-version & 100\% & 2.0\% & 78.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Over all validators (the four reference ones and the 20 LLM ones per domain, one point per domain and validator, N-version excluded), the Spearman correlation between mutation score and the fraction of real behaviors caught is $\rho = 0.51$ (95\% bootstrap CI [0.36, 0.66], $n = 100$); using the fraction of wrong outputs rejected, $\rho = 0.62$ [0.48, 0.75]. Per domain, $\rho = 0.81$ in financial, $0.87$ in USGS strict and $0.46$ [0.04, 0.78] in IoT; in USGS corrected there is no variance, because every validator catches the single faulty behavior. Mutation score therefore serves as a screen to discard weak validators before deployment, but does not replace a test with real faults, in line with what is known about mutants as substitutes for real faults in software testing \cite{just2014mutants}.
+
+\subsection{RQ4: Cost}
+
+Table~\ref{tab:rq4} summarizes the cost per check, measured on correct outputs of correct programs (Node~22). V0 costs 1 to 2\,µs. V2 costs 50 to 110\,µs at the median and does not re-run the program. V3 costs 0.63 to 0.73\,ms, because it re-runs the program five or six times per record. V4 requires one extra synthesis per format (one LLM call) and one extra execution per record. LLM validators cost 105 to 120\,µs per check; to create, one call (L) or, with self-checking, 3.3 calls on average (I). The V2 and V3 module has 276 to 301 lines per domain, against 6 to 12 for V0 and medians of 39 to 88 (L) and 45 to 89 (I) for the LLM validators. Timings come from a single run and vary between runs; the order of magnitude is stable.
+
+\begin{table}[t]
+\caption{Cost of each strategy: time per check (median in µs, range across domains) and what is needed to create the validator (RQ4).}
+\label{tab:rq4}
+\small
+\begin{tabular}{lrrl}
+\toprule
+Validator & µs/check & Extra runs & To create \\
+\midrule
+V0 format & 1--2 & 0 & manual (6--12 lines) \\
+V2 property & 50--110 & 0 & agent (276--301 lines) \\
+V3 metamorphic & 630--730 & 5--5.7 & same module \\
+V4 N-version & 140--190 & 1 & 1 synthesis per format \\
+L (LLM) & 105--115 & 0 & 1 call \\
+I (iterated LLM) & 105--120 & 0 & 3.3 calls (mean) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{RQ5: Verified pairs}
+\label{sec:rq5}
+
+Table~\ref{tab:rq5} shows the result. No composition rejected a correct program (0 of 27 correct behaviors and 0 of 961 correct programs): a verified pair only fails a program that gets it wrong. The pairs also block incomplete programs (which return \texttt{null} for valid records): 14 of the 15 incomplete behaviors with the first 10 pairs.
+
+On their own, verified pairs catch a lot with little: the first record of each format, verified, already catches 78.3\% of the faulty behaviors, because most faults show up in almost every record (values 100 times too large, dates in 1970, ignored time zones) and because, in formats that exist only to be rejected, the first record is already a rejection pair. But they plateau: with 10 random pairs, 85.9\%. The faults that escape are those that appear only in edge cases or in rare records (1--2\%). A program that invents the missing timestamp, for example, is wrong on 4\% of the records of its format, all of them edge cases. The stratified composition, which includes one case of each type, rises to 95.1\% with 10 pairs.
+
+\begin{table}[t]
+\caption{Fraction of the 23 faulty behaviors caught by a gate of $k$ verified pairs per format, alone (G) and combined with V0 and V2 (RQ5). For random and stratified, expected values. No configuration rejected a correct program.}
+\label{tab:rq5}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Composition & $k$ & G & G + V0 & G + V2 \\
+\midrule
+V2 alone & 0 & --- & --- & 91.3\% \\
+\midrule
+\multirow{2}{*}{First} & 1 & 78.3\% & 82.6\% & \textbf{100\%} \\
+ & 10 & 82.6\% & 87.0\% & \textbf{100\%} \\
+\midrule
+\multirow{3}{*}{Random} & 1 & 65.7\% & 71.4\% & 95.7\% \\
+ & 3 & 77.4\% & 81.8\% & 98.1\% \\
+ & 10 & 85.9\% & 90.0\% & 99.8\% \\
+\midrule
+\multirow{3}{*}{Stratified} & 1 & 61.7\% & 69.4\% & 95.7\% \\
+ & 3 & 86.2\% & 90.5\% & 98.1\% \\
+ & 10 & 95.1\% & 99.2\% & 99.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Complementarity.} Verified pairs and V2 fail on different faults. The two behaviors that escaped V2, the double conversion and the category derived from the wrong currency, are wrong on 75\% and 25\% of the records of their format, including the first ones, and fall at the first verified pair: the pair carries the convention the specification leaves implicit. Those that escape the pairs are precisely the rejection and rare ones, which V2 catches by requiring evidence in the input. Together, they catch from 95.7\% (one random pair) to 100\% (the first records) of the faulty behaviors, and 97.9\% to 100\% of the 70 defective programs, with V2's false rejection (0.5\% of the correct outputs of approved programs). With V0 instead of V2, the combination stays at 69--99\%: without the relations, the pairs have to cover the edge cases.
+
+\section{Discussion: What a Validator Needs to Check}
+
+\textbf{Relate the output to the input, not only to the format.} Most real faults are well-formed. What gives them away is the relation to the input: the number in the output is not explainable by any number in the input under the allowed conversions; the output date is not in the input; the input does not contain the currency or timestamp the output asserts. These relations can be written generically, treating the input as text, without relying on field names or delimiters. The instance that wrote V2 received one example of each evaluated format, including the new ones; whether the relations still hold for never-seen formats is a hypothesis this study does not test.
+
+\textbf{Require evidence for what the specification says to reject.} Four of the 23 behaviors are programs that ``guess'' a value for a missing piece of data. A validator that requires, in the input, evidence of each mandatory field turns that guess into a rejection.
+
+\textbf{Metamorphic and N-version do not pay off here.} V3 cost six to fifteen times more than V2 and added nothing on top of it. N-version caught a lot, but with high and unstable false rejection: the quality of the gate comes to depend on which partner was drawn.
+
+\textbf{Do not delegate the validator to the same process that generates the program.} A validator generated by the LLM in a single call tends to be either too permissive or too strict, and letting the same model revise it against the specification's examples does not solve this: it passes the examples and keeps rejecting correct records the examples do not cover. A self-check with one example per format measures little. If the validator is generated by an LLM, it must be validated against a set of correct records much larger and more varied than the one in the prompt, for instance a reviewed production sample, before it becomes a gate.
+
+\textbf{The specification is the validator's ceiling; verified examples go beyond it.} The two faults that escaped V2 are not failures of the validator but limits of the specification: a plausible conversion the specification does not distinguish and an ambiguity about which currency defines the category. A validator derived from the specification cannot go past that ceiling; a verified pair can, because it carries the convention the specification omits.
+
+\textbf{Start each program with verified pairs.} If each format has a few pairs with verified output, including edge cases and inputs that must be rejected, and the format is stable during use, requiring the program to reproduce them before approval rejects no correct program and, combined with a relations validator, caught practically every fault in the corpus. The cost is human: verifying a few records per new format. The choice of pairs matters more than their number: one case of each type yields more than many normal cases.
+
+\section{Threats to Validity}
+\label{sec:ameacas}
+
+\textbf{Authorship of V2.} V2 and V3 were written by an instance of Claude Opus 5.5, a newer model than those studied, working as an agent: it derived the correct outputs of the examples, wrote its own tests and iterated. The L validators were generated in a single call by Opus 4.5 and Haiku 4.5, and the I validators revised by the same models with automatic self-checks on the same examples. X5 shows that iteration alone does not explain the difference; it is attributed to the model and to the agent's freedom, which this study does not separate. The comparison should not be read as ``human versus LLM''. The instance that wrote V2 had no access to the corpus, the faults or the results, and the code was frozen before evaluation; we cannot, however, rule out that the model's general knowledge of common parsing faults influenced the relations it chose.
+
+\textbf{X5 feedback.} The output mutator and the five-round limit are our choices; richer feedback (more correct examples per format, inputs that must be rejected) might give a different result. In particular, the feedback contains no inputs to reject, which limits what revision can learn about the rejection rule (USGS strict).
+
+\textbf{Format knowledge.} Despite the constraint of treating the input as opaque text, the USGS V2 contains some generic knowledge of GeoJSON (it ignores ``Feature'' and ``Point'' as event types and the event title as a location).
+
+\textbf{Corpus size and origin.} There are 23 faulty behaviors in three extraction domains, from two models of the same family. The RQ3 correlation is inconclusive for lack of data, and generalization to other kinds of program is a hypothesis. The new formats were designed by the author after seeing the faults of the original corpus, which may have favored certain kinds of fault; the labels come from the oracle, not from the author's judgment.
+
+\textbf{Oracle.} The oracle of the pre-aggregated format resolves an ambiguity of the specification by convention; we report the case as a limit of the specification, not as a pure fault.
+
+\textbf{Mutation.} The operators are textual; some hit identifiers or literals that do not correspond to plausible LLM errors, which explains part of V1's divergence between mutants and real faults. The N-version score is optimistic by construction.
+
+\textbf{Verified pairs.} RQ5 assumes perfect verification (the truth comes from the oracle) and a stable format. The ``first'' composition reflects the order of our synthetic stream, in which normal records come before edge cases; the random composition is the estimate least dependent on that order. The stratified one uses the record types of our generator; in practice, it depends on whoever verifies knowing the format's edge cases.
+
+\textbf{Representative per behavior.} Programs with the same behavior may produce different wrong outputs; we report the first program of each group and, separately, the per-unique-program results, which lead to the same conclusions.
+
+\section{Related Work}
+
+\textbf{Test oracles.} Deciding whether an output is correct without knowing the answer is a central problem in software testing \cite{barr2015oracle}. Metamorphic relations \cite{chen1998metamorphic,segura2016survey} and properties \cite{claessen2000quickcheck} are the classic forms of partial oracle; here they are used in production, as an acceptance gate for synthesized programs. Invariants can also be inferred from observed executions, as in Daikon \cite{ernst2007daikon}; V2, in contrast, is derived from the specification, which protects it from learning the behavior of a defective program as an invariant.
+
+\textbf{N-version and failure independence.} N-version programming \cite{avizienis1985nversion} assumes independent failures, an assumption refuted experimentally \cite{knight1986experimental}. Recent work generates the variants with LLMs \cite{ron2024galapagos}; our results show the cost of this strategy in false rejection when used as a gate.
+
+\textbf{Model-generated oracles.} Test oracles generated by neural models \cite{dinella2022toga} had, in a large-scale evaluation, more than 47\% false positives among the generated assertions \cite{hossain2023neural}, the testing equivalent of the false rejection we measure. Postconditions generated by LLMs from natural language discriminate wrong code and caught real historical bugs \cite{endres2024nl2postcond}; our L validators are the production analogue, with the difference that we also measure how many correct outputs they reject. LLM-generated oracles tend to capture the behavior the program has rather than the expected one \cite{konstantinou2024oracles}, which motivates RQ3's question about correlated errors. An overview of LLMs in testing is given in \cite{wang2024survey}.
+
+\textbf{LLMs checking LLMs.} Generating tests with the model itself to choose among solutions \cite{chen2022codet} and using LLMs as judges \cite{zheng2023judging} are widespread practices. Our data suggest that, as an acceptance gate, an LLM-generated validator needs to be validated before use.
+
+\textbf{Self-correction.} LLMs fix their own code when given execution results \cite{chen2024selfdebug}, but do not improve reliably without external feedback \cite{huang2024cannot}. X5 sits between the two: there is external feedback, but restricted to the specification's examples, and the improvement on the examples did not transfer to the stream.
+
+\textbf{Examples as specification.} Input--output pairs are the specification in programming by example \cite{gulwani2011flashfill}, where they serve to \textit{synthesize} the program. In RQ5, the same pairs serve to \textit{accept} a program synthesized from a natural-language specification, and they cover precisely what that specification leaves ambiguous.
+
+\textbf{Mutation as a substitute for real faults.} The validity of mutants as substitutes for real faults has been studied for test suites \cite{just2014mutants,jia2011mutation}; we extend the question to validators of LLM-synthesized programs.
+
+\textbf{IDAE.} This paper builds on the evaluation of IDAE \cite{batista2026idae}, which showed that the architecture's guarantee is the strength of its specification, and reuses its domains, oracles and logs.
+
+\section{Conclusion}
+
+A format validator caught 6 of 23 real faulty behaviors of LLM-synthesized programs. A validator that relates each output to the raw input, written from the specification alone and without seeing the faults, caught 21, with 0.4\% false rejection, at a cost of tens of microseconds per record. Validators written by the LLMs themselves were strong but almost always unusable because they rejected correct outputs, even after being revised by the model itself against the specification's examples; N-version was strong and unstable. Verified pairs per format, required before approving each program, rejected no correct program and caught exactly the faults the relations validator let through; together, they caught 96\% to 100\% of the faulty behaviors. Mutation score correlated moderately with real strength and serves as a screen. And the two faults that escaped the relations validator show its ceiling: the specification itself, which only verified examples go beyond.
+
+Future work includes extending the corpus to other kinds of program and more model families, separating the effect of the model from the effect of the agent process in writing validators, measuring whether self-checking against a larger sample of correct records makes LLM-generated validators usable, and applying the same yardstick to domains where the specification is a set of invariants, such as generated game mechanics.
+
+The natural next step, and the one we intend to build, is \textit{human-approval} software for these variable points. When the validator or the verified pairs invalidate a disposable program, the payloads arriving in that format are held instead of being processed or discarded; the system synthesizes a new program and presents it to a person with the evidence needed to decide: the record that invalidated the previous program, the new program's output on the verified pairs and on the held payloads, and the relations the validator checked. Once approved, the program goes into use and processes the held payloads; each output checked during approval becomes one more verified pair for the format. The hypothesis is that, in parts of software that change often and are already maintained with AI, this approval cycle can replace the QA-and-deploy cycle: what needs human validation is the new program and the outputs it produces, not a new version of the system. The results of this paper suggest what to show the approver (verified pairs and relations to the input, not another LLM's opinion), but leave open the questions a user study would have to answer: how long payloads can be held, how often approval is needed, and whether approvers, faced with favorable evidence, start approving without checking.
+
+\section*{Artifact Availability}
+
+The artifacts are available at \url{https://github.com/carloseduardodb/idae-validators}. The package contains the program corpus (with the code, labels and provenance of each response), the JSONL logs of every LLM call, the new domain phases, the V2/V3 validators frozen with SHA-256 hashes together with the material the instance that wrote them received, the 80 frozen LLM validators and their revised versions (with every round), the mutants, the scripts of experiments X0--X6 and the raw results. The IDAE paper is archived on Zenodo under DOI \href{https://doi.org/10.5281/zenodo.23062292}{10.5281/zenodo.23062292} (original Portuguese version: \href{https://doi.org/10.5281/zenodo.23050791}{10.5281/zenodo.23050791}), and its code at \url{https://github.com/carloseduardodb/idae}.
+
+\section*{Declaration of Generative AI Use}
+
+Beyond the use of LLMs as the object of study (Claude Opus 4.5 and Haiku 4.5 as synthesizers of programs and validators), a generative AI assistant (Claude Opus 5.5) was used to: design part of the experiments, implement the evaluation scripts and statistical analyses, search for and check references, and draft the text of the paper and this English translation. In an isolated instance, described in Section~\ref{sec:desenho}, the same assistant wrote the V2 and V3 validators. The author defined the research questions, reviewed the code, the results and the text, and takes full responsibility for the content.
+
+\bibliographystyle{ACM-Reference-Format}
+\begin{thebibliography}{30}
+
+\bibitem{avizienis1985nversion}
+Algirdas Avižienis. 1985.
+The N-version approach to fault-tolerant software.
+\textit{IEEE Transactions on Software Engineering} SE-11, 12 (1985), 1491--1501.
+
+\bibitem{barr2015oracle}
+Earl T. Barr, Mark Harman, Phil McMinn, Muzammil Shahbaz, and Shin Yoo. 2015.
+The oracle problem in software testing: A survey.
+\textit{IEEE Transactions on Software Engineering} 41, 5 (2015), 507--525.
+
+\bibitem{batista2026idae}
+Carlos Eduardo Dias Batista. 2026.
+Disposable programs under an immutable specification: What a validator actually guarantees --- A study on data extraction.
+Zenodo. \url{https://doi.org/10.5281/zenodo.23062292}
+
+\bibitem{chen1998metamorphic}
+Tsong Yueh Chen, Shing Chi Cheung, and Siu Ming Yiu. 1998.
+\textit{Metamorphic Testing: A New Approach for Generating Next Test Cases}.
+Technical Report HKUST-CS98-01. Hong Kong University of Science and Technology.
+
+\bibitem{chen2022codet}
+Bei Chen, Fengji Zhang, Anh Nguyen, Daoguang Zan, Zeqi Lin, Jian-Guang Lou, and Weizhu Chen. 2022.
+CodeT: Code generation with generated tests.
+arXiv:2207.10397.
+
+\bibitem{chen2024selfdebug}
+Xinyun Chen, Maxwell Lin, Nathanael Schärli, and Denny Zhou. 2024.
+Teaching large language models to self-debug.
+In \textit{Proceedings of the 12th International Conference on Learning Representations (ICLR)}. arXiv:2304.05128.
+
+\bibitem{claessen2000quickcheck}
+Koen Claessen and John Hughes. 2000.
+QuickCheck: A lightweight tool for random testing of Haskell programs.
+In \textit{Proceedings of the Fifth ACM SIGPLAN International Conference on Functional Programming (ICFP)}. 268--279.
+
+\bibitem{dinella2022toga}
+Elizabeth Dinella, Gabriel Ryan, Todd Mytkowicz, and Shuvendu K. Lahiri. 2022.
+TOGA: A neural method for test oracle generation.
+In \textit{Proceedings of the 44th International Conference on Software Engineering (ICSE)}. \url{https://doi.org/10.1145/3510003.3510141}
+
+\bibitem{endres2024nl2postcond}
+Madeline Endres, Sarah Fakhoury, Saikat Chakraborty, and Shuvendu K. Lahiri. 2024.
+Can large language models transform natural language intent into formal method postconditions?
+\textit{Proceedings of the ACM on Software Engineering} 1, FSE (2024). \url{https://doi.org/10.1145/3660791}
+
+\bibitem{ernst2007daikon}
+Michael D. Ernst, Jeff H. Perkins, Philip J. Guo, Stephen McCamant, Carlos Pacheco, Matthew S. Tschantz, and Chen Xiao. 2007.
+The Daikon system for dynamic detection of likely invariants.
+\textit{Science of Computer Programming} 69 (2007), 35--45.
+
+\bibitem{gulwani2011flashfill}
+Sumit Gulwani. 2011.
+Automating string processing in spreadsheets using input-output examples.
+In \textit{Proceedings of the 38th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL)}. 317--330.
+
+\bibitem{hossain2023neural}
+Soneya Binta Hossain, Antonio Filieri, Matthew B. Dwyer, Sebastian Elbaum, and Willem Visser. 2023.
+Neural-based test oracle generation: A large-scale evaluation and lessons learned.
+In \textit{Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)}. \url{https://doi.org/10.1145/3611643.3616265}
+
+\bibitem{huang2024cannot}
+Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu Steven Zheng, Adams Wei Yu, Xinying Song, and Denny Zhou. 2024.
+Large language models cannot self-correct reasoning yet.
+In \textit{Proceedings of the 12th International Conference on Learning Representations (ICLR)}. arXiv:2310.01798.
+
+\bibitem{jia2011mutation}
+Yue Jia and Mark Harman. 2011.
+An analysis and survey of the development of mutation testing.
+\textit{IEEE Transactions on Software Engineering} 37, 5 (2011), 649--678.
+
+\bibitem{just2014mutants}
+René Just, Darioush Jalali, Laura Inozemtseva, Michael D. Ernst, Reid Holmes, and Gordon Fraser. 2014.
+Are mutants a valid substitute for real faults in software testing?
+In \textit{Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE)}. 654--665.
+
+\bibitem{knight1986experimental}
+John C. Knight and Nancy G. Leveson. 1986.
+An experimental evaluation of the assumption of independence in multiversion programming.
+\textit{IEEE Transactions on Software Engineering} SE-12, 1 (1986), 96--109.
+
+\bibitem{konstantinou2024oracles}
+Michael Konstantinou, Renzo Degiovanni, and Mike Papadakis. 2024.
+Do LLMs generate test oracles that capture the actual or the expected program behaviour?
+arXiv:2410.21136.
+
+\bibitem{meyer1997object}
+Bertrand Meyer. 1997.
+\textit{Object-Oriented Software Construction} (2nd ed.).
+Prentice Hall.
+
+\bibitem{ron2024galapagos}
+Javier Ron, Diogo Gaspar, Javier Cabrera-Arteaga, Benoit Baudry, and Martin Monperrus. 2024.
+Galápagos: Automated N-version programming with LLMs.
+arXiv:2408.09536.
+
+\bibitem{segura2016survey}
+Sergio Segura, Gordon Fraser, Ana B. Sanchez, and Antonio Ruiz-Cortés. 2016.
+A survey on metamorphic testing.
+\textit{IEEE Transactions on Software Engineering} 42, 9 (2016), 805--824.
+
+\bibitem{wang2024survey}
+Junjie Wang, Yuchao Huang, Chunyang Chen, Zhe Liu, Song Wang, and Qing Wang. 2024.
+Software testing with large language models: Survey, landscape, and vision.
+\textit{IEEE Transactions on Software Engineering} 50, 4 (2024), 911--936.
+
+\bibitem{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang, Joseph E. Gonzalez, and Ion Stoica. 2023.
+Judging LLM-as-a-judge with MT-Bench and Chatbot Arena.
+In \textit{Advances in Neural Information Processing Systems 36 (NeurIPS), Datasets and Benchmarks Track}.
+
+\end{thebibliography}
+
+\end{document}

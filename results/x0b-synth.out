@@ -1,0 +1,19 @@
+jobs: 182  |  já feitos: 0  |  a fazer: 182
+por domínio: { financial: 72, iot: 78, 'usgs-corrected': 16, 'usgs-strict': 16 }
+  20/182  ok=20 falhas=0
+  40/182  ok=40 falhas=0
+  60/182  ok=60 falhas=0
+  80/182  ok=80 falhas=0
+  100/182  ok=100 falhas=0
+  120/182  ok=120 falhas=0
+  140/182  ok=140 falhas=0
+  160/182  ok=160 falhas=0
+  180/182  ok=180 falhas=0
+fim: ok=182 falhas=0 {
+  calls: 182,
+  promptChars: 378360,
+  responseChars: 411537,
+  errors: 0,
+  ms: 1426483,
+  estTokens: 197474
+}

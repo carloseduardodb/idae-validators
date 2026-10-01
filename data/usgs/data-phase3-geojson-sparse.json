@@ -1,0 +1,4022 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1776019251000,
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=100&starttime=2024-07-01&endtime=2024-08-01&minmagnitude=0&maxmagnitude=1",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "2.4.0",
+    "limit": 100,
+    "offset": 1
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.62,
+        "place": "20 km ESE of Anza, CA",
+        "time": 1722470024140,
+        "updated": 1722533740636,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678783",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678783&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "ci",
+        "code": "40678783",
+        "ids": ",ci40678783,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 23,
+        "dmin": 0.05654,
+        "rms": 0.17,
+        "gap": 65,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 20 km ESE of Anza, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4741667,
+          33.4838333,
+          14.46
+        ]
+      },
+      "id": "ci40678783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.22,
+        "place": "11 km ESE of Mammoth Lakes, CA",
+        "time": 1722469405480,
+        "updated": 1722476364328,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75042047",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75042047&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "nc",
+        "code": "75042047",
+        "ids": ",nc75042047,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 8,
+        "dmin": 0.004914,
+        "rms": 0.02,
+        "gap": 132,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.2 - 11 km ESE of Mammoth Lakes, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.86,
+          37.6146666666667,
+          5.04
+        ]
+      },
+      "id": "nc75042047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0,
+        "place": "6 km WSW of Dutch Harbor, Alaska",
+        "time": 1722469378740,
+        "updated": 1722476085110,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93217226",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93217226&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "av",
+        "code": "93217226",
+        "ids": ",av93217226,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 8,
+        "dmin": 0.02532,
+        "rms": 0.14,
+        "gap": 121,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.0 - 6 km WSW of Dutch Harbor, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -166.645166666667,
+          53.8746666666667,
+          8.19
+        ]
+      },
+      "id": "av93217226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.7000000000000001,
+        "place": "8 km SE of Desert Aire, Washington",
+        "time": 1722468890070,
+        "updated": 1731097758230,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uw62030636",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uw62030636&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 8,
+        "net": "uw",
+        "code": "62030636",
+        "ids": ",uw62030636,",
+        "sources": ",uw,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.05151,
+        "rms": 0.08,
+        "gap": 160,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.7 - 8 km SE of Desert Aire, Washington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.83733333333333,
+          46.620666666666665,
+          6.35
+        ]
+      },
+      "id": "uw62030636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1,
+        "place": "68 km NW of Rampart, Alaska",
+        "time": 1722468331268,
+        "updated": 1725902220546,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249snbben",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249snbben&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 15,
+        "net": "ak",
+        "code": "0249snbben",
+        "ids": ",ak0249snbben,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.53,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.0 - 68 km NW of Rampart, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.1967,
+          65.948,
+          14.7
+        ]
+      },
+      "id": "ak0249snbben"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.44,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722467741380,
+        "updated": 1722530959410,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077121",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077121&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 3,
+        "net": "uu",
+        "code": "80077121",
+        "ids": ",uu80077121,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 10,
+        "dmin": 0.007532,
+        "rms": 0.07,
+        "gap": 97,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.4 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.898666666667,
+          38.4898333333333,
+          3.69
+        ]
+      },
+      "id": "uu80077121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.8,
+        "place": "18 km WSW of Petersville, Alaska",
+        "time": 1722467416416,
+        "updated": 1725902220330,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249sn82id",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249sn82id&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "ak",
+        "code": "0249sn82id",
+        "ids": ",ak0249sn82id,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.6,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 18 km WSW of Petersville, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.1157,
+          62.4465,
+          14.2
+        ]
+      },
+      "id": "ak0249sn82id"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.76,
+        "place": "59 km W of Adak, Alaska",
+        "time": 1722467147830,
+        "updated": 1722476381440,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93017029",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93017029&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "av",
+        "code": "93017029",
+        "ids": ",av93017029,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 4,
+        "dmin": 0.1582,
+        "rms": 0.13,
+        "gap": 171,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 59 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -177.488333333333,
+          51.778,
+          -1.77
+        ]
+      },
+      "id": "av93017029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1,
+        "place": "5 km W of Houston, Alaska",
+        "time": 1722466992689,
+        "updated": 1725902220117,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249sn6k9w",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249sn6k9w&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 15,
+        "net": "ak",
+        "code": "0249sn6k9w",
+        "ids": ",ak0249sn6k9w,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.31,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.0 - 5 km W of Houston, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.919,
+          61.6222,
+          48
+        ]
+      },
+      "id": "ak0249sn6k9w"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.06,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722463671540,
+        "updated": 1722528518210,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077116",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077116&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "uu",
+        "code": "80077116",
+        "ids": ",uu80077116,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.01116,
+        "rms": 0.09,
+        "gap": 99,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.1 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.903166666667,
+          38.4911666666667,
+          3.22
+        ]
+      },
+      "id": "uu80077116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.65,
+        "place": "40 km NE of Adak, Alaska",
+        "time": 1722462872040,
+        "updated": 1722813430420,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93217166",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93217166&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "av",
+        "code": "93217166",
+        "ids": ",av93217166,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.01757,
+        "rms": 0.3,
+        "gap": 293,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.7 - 40 km NE of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -176.188166666667,
+          52.1098333333333,
+          8.39
+        ]
+      },
+      "id": "av93217166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.6,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722461630420,
+        "updated": 1722463839670,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077106",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077106&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "uu",
+        "code": "80077106",
+        "ids": ",uu80077106,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 12,
+        "dmin": 0.006942,
+        "rms": 0.1,
+        "gap": 83,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.6 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.899666666667,
+          38.4873333333333,
+          3.3
+        ]
+      },
+      "id": "uu80077106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.36,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722460193730,
+        "updated": 1722464631590,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077101",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077101&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "uu",
+        "code": "80077101",
+        "ids": ",uu80077101,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.009392,
+        "rms": 0.06,
+        "gap": 98,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.4 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.901166666667,
+          38.4903333333333,
+          3.44
+        ]
+      },
+      "id": "uu80077101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.45,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722460036650,
+        "updated": 1722464505050,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077096",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077096&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 3,
+        "net": "uu",
+        "code": "80077096",
+        "ids": ",uu80077096,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 10,
+        "dmin": 0.009676,
+        "rms": 0.06,
+        "gap": 133,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.5 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.899333333333,
+          38.4923333333333,
+          3.59
+        ]
+      },
+      "id": "uu80077096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.65,
+        "place": "7 km WNW of Cobb, CA",
+        "time": 1722459904390,
+        "updated": 1722462736840,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75042017",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75042017&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "nc",
+        "code": "75042017",
+        "ids": ",nc75042017,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 7,
+        "dmin": 0.006112,
+        "rms": 0.01,
+        "gap": 125,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.7 - 7 km WNW of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.798164367676,
+          38.8381652832031,
+          2.05999994277954
+        ]
+      },
+      "id": "nc75042017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.76,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722459829220,
+        "updated": 1722463065160,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077091",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077091&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "uu",
+        "code": "80077091",
+        "ids": ",uu80077091,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.008549,
+        "rms": 0.12,
+        "gap": 87,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.901333333333,
+          38.4815,
+          2.53
+        ]
+      },
+      "id": "uu80077091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.61,
+        "place": "6 km WNW of Cobb, CA",
+        "time": 1722459800270,
+        "updated": 1722466763294,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75042012",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75042012&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "nc",
+        "code": "75042012",
+        "ids": ",nc75042012,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 10,
+        "dmin": 0.003556,
+        "rms": 0.02,
+        "gap": 79,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.6 - 6 km WNW of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.786003112793,
+          38.8373336791992,
+          1.49000000953674
+        ]
+      },
+      "id": "nc75042012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.64,
+        "place": "15 km N of Yucca Valley, CA",
+        "time": 1722459528100,
+        "updated": 1730938420617,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678527",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678527&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "ci",
+        "code": "40678527",
+        "ids": ",ci40678527,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 14,
+        "dmin": 0.05757,
+        "rms": 0.08,
+        "gap": 103,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 15 km N of Yucca Valley, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4348333,
+          34.2491667,
+          8.18
+        ]
+      },
+      "id": "ci40678527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.5,
+        "place": "0 km NE of Carter Springs, Nevada",
+        "time": 1722459039195,
+        "updated": 1722467525646,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881759",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881759&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 4,
+        "net": "nn",
+        "code": "00881759",
+        "ids": ",nn00881759,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 3,
+        "dmin": 0.035,
+        "rms": 0.1347,
+        "gap": 266.81,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.5 - 0 km NE of Carter Springs, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.6356,
+          38.8652,
+          0
+        ]
+      },
+      "id": "nn00881759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.35,
+        "place": "7 km WNW of Cobb, CA",
+        "time": 1722458994810,
+        "updated": 1722464965095,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75042007",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75042007&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "nc",
+        "code": "75042007",
+        "ids": ",nc75042007,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 7,
+        "dmin": 0.01308,
+        "rms": 0.01,
+        "gap": 88,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.4 - 7 km WNW of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.807502746582,
+          38.8363342285156,
+          1.62000000476837
+        ]
+      },
+      "id": "nc75042007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.57,
+        "place": "4 km SW of Bingham Canyon, Utah",
+        "time": 1722458386010,
+        "updated": 1722462220510,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077081",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077081&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 5,
+        "net": "uu",
+        "code": "80077081",
+        "ids": ",uu80077081,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 7,
+        "dmin": 0.07478,
+        "rms": 0.23,
+        "gap": 93,
+        "magType": "md",
+        "type": "quarry blast",
+        "title": "M 0.6 Quarry Blast - 4 km SW of Bingham Canyon, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.157666666667,
+          40.5285,
+          -2
+        ]
+      },
+      "id": "uu80077081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.92,
+        "place": "14 km SW of Thatcher, Utah",
+        "time": 1722458141330,
+        "updated": 1722462123280,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077076",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077076&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 13,
+        "net": "uu",
+        "code": "80077076",
+        "ids": ",uu80077076,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 13,
+        "dmin": 0.0312,
+        "rms": 0.17,
+        "gap": 59,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 14 km SW of Thatcher, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.403166666667,
+          41.588,
+          9.34
+        ]
+      },
+      "id": "uu80077076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.73,
+        "place": "9 km NE of Julian, CA",
+        "time": 1722457753320,
+        "updated": 1722467633117,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678463",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678463&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 8,
+        "net": "ci",
+        "code": "40678463",
+        "ids": ",ci40678463,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 26,
+        "dmin": 0.0787,
+        "rms": 0.21,
+        "gap": 50,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.7 - 9 km NE of Julian, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.543,
+          33.1451667,
+          14.99
+        ]
+      },
+      "id": "ci40678463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.79,
+        "place": "2 km NE of The Geysers, CA",
+        "time": 1722457432860,
+        "updated": 1722460939632,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041997",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041997&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "nc",
+        "code": "75041997",
+        "ids": ",nc75041997,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 8,
+        "dmin": 0.01185,
+        "rms": 0.03,
+        "gap": 88,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 2 km NE of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.748001098633,
+          38.7911682128906,
+          3
+        ]
+      },
+      "id": "nc75041997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.27,
+        "place": "7 km NW of The Geysers, CA",
+        "time": 1722456950690,
+        "updated": 1724104850007,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041992",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041992&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "nc",
+        "code": "75041992",
+        "ids": ",nc75041992,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 21,
+        "dmin": 0.01016,
+        "rms": 0.02,
+        "gap": 49,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 7 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.819833333333,
+          38.8166666666667,
+          3.01
+        ]
+      },
+      "id": "nc75041992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.77,
+        "place": "10 km NW of The Geysers, CA",
+        "time": 1722456510170,
+        "updated": 1722458665393,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041982",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041982&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "nc",
+        "code": "75041982",
+        "ids": ",nc75041982,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 13,
+        "dmin": 0.01484,
+        "rms": 0.03,
+        "gap": 93,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 10 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.853996276855,
+          38.8223342895508,
+          2.34999990463257
+        ]
+      },
+      "id": "nc75041982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.76,
+        "place": "10 km NW of The Geysers, CA",
+        "time": 1722456366760,
+        "updated": 1722457633280,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041977",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041977&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "nc",
+        "code": "75041977",
+        "ids": ",nc75041977,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 13,
+        "dmin": 0.007349,
+        "rms": 0.02,
+        "gap": 141,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 10 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.855003356934,
+          38.8203315734863,
+          2.57999992370605
+        ]
+      },
+      "id": "nc75041977"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.53,
+        "place": "3 km NW of The Geysers, CA",
+        "time": 1722455826730,
+        "updated": 1722457035210,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041972",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041972&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 4,
+        "net": "nc",
+        "code": "75041972",
+        "ids": ",nc75041972,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 8,
+        "dmin": 0.007758,
+        "rms": 0.01,
+        "gap": 102,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.5 - 3 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.77799987793,
+          38.7928352355957,
+          1.82000005245209
+        ]
+      },
+      "id": "nc75041972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.94,
+        "place": "0 km WNW of Borrego Springs, CA",
+        "time": 1722455578310,
+        "updated": 1722457578138,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678399",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678399&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 14,
+        "net": "ci",
+        "code": "40678399",
+        "ids": ",ci40678399,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 45,
+        "dmin": 0.03315,
+        "rms": 0.2,
+        "gap": 45,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 0 km WNW of Borrego Springs, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.3798333,
+          33.2571667,
+          3.73
+        ]
+      },
+      "id": "ci40678399"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.28,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722455193730,
+        "updated": 1722461712940,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077066",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077066&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "uu",
+        "code": "80077066",
+        "ids": ",uu80077066,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 12,
+        "dmin": 0.008321,
+        "rms": 0.06,
+        "gap": 81,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.9005,
+          38.4891666666667,
+          3.54
+        ]
+      },
+      "id": "uu80077066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.99,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722454872870,
+        "updated": 1722460457970,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077061",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077061&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 15,
+        "net": "uu",
+        "code": "80077061",
+        "ids": ",uu80077061,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 13,
+        "dmin": 0.006825,
+        "rms": 0.12,
+        "gap": 84,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 1.0 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.9,
+          38.4841666666667,
+          2.8
+        ]
+      },
+      "id": "uu80077061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.67,
+        "place": "15 km NE of Milford, Utah",
+        "time": 1722454179960,
+        "updated": 1722456395250,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077046",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077046&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 7,
+        "net": "uu",
+        "code": "80077046",
+        "ids": ",uu80077046,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 8,
+        "dmin": 0.00694,
+        "rms": 0.05,
+        "gap": 147,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.7 - 15 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.886666666667,
+          38.4908333333333,
+          3.44
+        ]
+      },
+      "id": "uu80077046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.14,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722453979380,
+        "updated": 1722464229840,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077041",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077041&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "uu",
+        "code": "80077041",
+        "ids": ",uu80077041,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 9,
+        "dmin": 0.00774,
+        "rms": 0.07,
+        "gap": 134,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.1 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.898833333333,
+          38.49,
+          3.42
+        ]
+      },
+      "id": "uu80077041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.75,
+        "place": "3 km NNE of Rancho San Diego, CA",
+        "time": 1722453781370,
+        "updated": 1722554244366,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678367",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678367&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "ci",
+        "code": "40678367",
+        "ids": ",ci40678367,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 7,
+        "dmin": 0.0425,
+        "rms": 0.26,
+        "gap": 115,
+        "magType": "ml",
+        "type": "quarry blast",
+        "title": "M 0.8 Quarry Blast - 3 km NNE of Rancho San Diego, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9213333,
+          32.7743333,
+          -0.49
+        ]
+      },
+      "id": "ci40678367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.91,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722453473520,
+        "updated": 1722464321960,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077031",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077031&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 13,
+        "net": "uu",
+        "code": "80077031",
+        "ids": ",uu80077031,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 16,
+        "dmin": 0.004227,
+        "rms": 0.12,
+        "gap": 81,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.9 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.896666666667,
+          38.4856666666667,
+          3.35
+        ]
+      },
+      "id": "uu80077031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.77,
+        "place": "15 km SW of Thatcher, Utah",
+        "time": 1722452995480,
+        "updated": 1722459363800,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077026",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077026&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "uu",
+        "code": "80077026",
+        "ids": ",uu80077026,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 13,
+        "dmin": 0.02741,
+        "rms": 0.14,
+        "gap": 61,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 15 km SW of Thatcher, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.408,
+          41.5868333333333,
+          10.47
+        ]
+      },
+      "id": "uu80077026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.98,
+        "place": "6 km ESE of March Air Reserve Base, CA",
+        "time": 1722452462410,
+        "updated": 1722554072065,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678335",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678335&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 15,
+        "net": "ci",
+        "code": "40678335",
+        "ids": ",ci40678335,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 43,
+        "dmin": 0.01519,
+        "rms": 0.2,
+        "gap": 47,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.0 - 6 km ESE of March Air Reserve Base, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2065,
+          33.8768333,
+          9.55
+        ]
+      },
+      "id": "ci40678335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.75,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722452168780,
+        "updated": 1722459223070,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077021",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077021&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "uu",
+        "code": "80077021",
+        "ids": ",uu80077021,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.007555,
+        "rms": 0.08,
+        "gap": 79,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.896833333333,
+          38.4911666666667,
+          3.8
+        ]
+      },
+      "id": "uu80077021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.56,
+        "place": "16 km N of Ashford, Washington",
+        "time": 1722452057350,
+        "updated": 1722458178890,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uw62030546",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uw62030546&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 5,
+        "net": "uw",
+        "code": "62030546",
+        "ids": ",uw62030546,",
+        "sources": ",uw,",
+        "types": ",origin,phase-data,",
+        "nst": 20,
+        "dmin": 0.02906,
+        "rms": 0.08,
+        "gap": 144,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 16 km N of Ashford, Washington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.00816666666667,
+          46.904,
+          11.2
+        ]
+      },
+      "id": "uw62030546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.92,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722451243300,
+        "updated": 1722458746760,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077011",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077011&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 13,
+        "net": "uu",
+        "code": "80077011",
+        "ids": ",uu80077011,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 13,
+        "dmin": 0.003677,
+        "rms": 0.12,
+        "gap": 81,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.9 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.8955,
+          38.4866666666667,
+          3.47
+        ]
+      },
+      "id": "uu80077011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.8,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722450963560,
+        "updated": 1722458598090,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80077006",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80077006&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "uu",
+        "code": "80077006",
+        "ids": ",uu80077006,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 12,
+        "dmin": 0.006346,
+        "rms": 0.08,
+        "gap": 83,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.899333333333,
+          38.486,
+          3.23
+        ]
+      },
+      "id": "uu80077006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.8,
+        "place": "16 km W of Stevens Village, Alaska",
+        "time": 1722450748045,
+        "updated": 1725902216609,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249skdn5h",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249skdn5h&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "ak",
+        "code": "0249skdn5h",
+        "ids": ",ak0249skdn5h,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.57,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 16 km W of Stevens Village, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.4407,
+          65.9868,
+          5.2
+        ]
+      },
+      "id": "ak0249skdn5h"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.87,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722450679870,
+        "updated": 1722458303610,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076996",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076996&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 12,
+        "net": "uu",
+        "code": "80076996",
+        "ids": ",uu80076996,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 17,
+        "dmin": 0.005268,
+        "rms": 0.13,
+        "gap": 45,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.9 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.898,
+          38.4841666666667,
+          3.02
+        ]
+      },
+      "id": "uu80076996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.8,
+        "place": "20 km NNW of Sutton-Alpine, Alaska",
+        "time": 1722450369851,
+        "updated": 1725902216406,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249skcbi3",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249skcbi3&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "ak",
+        "code": "0249skcbi3",
+        "ids": ",ak0249skcbi3,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.68,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 20 km NNW of Sutton-Alpine, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -148.9301,
+          61.9446,
+          5.7
+        ]
+      },
+      "id": "ak0249skcbi3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.74,
+        "place": "3 km NW of The Geysers, CA",
+        "time": 1722450246150,
+        "updated": 1722452963769,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041927",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041927&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 8,
+        "net": "nc",
+        "code": "75041927",
+        "ids": ",nc75041927,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 10,
+        "dmin": 0.006914,
+        "rms": 0.02,
+        "gap": 109,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.7 - 3 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.779335021973,
+          38.7915000915527,
+          2.17000007629395
+        ]
+      },
+      "id": "nc75041927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.27,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722450038640,
+        "updated": 1722457495270,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076986",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076986&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "uu",
+        "code": "80076986",
+        "ids": ",uu80076986,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 10,
+        "dmin": 0.006199,
+        "rms": 0.13,
+        "gap": 103,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.899166666667,
+          38.484,
+          3.28
+        ]
+      },
+      "id": "uu80076986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.25,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722449984280,
+        "updated": 1722457333350,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076981",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076981&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "uu",
+        "code": "80076981",
+        "ids": ",uu80076981,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 10,
+        "dmin": 0.008462,
+        "rms": 0.07,
+        "gap": 98,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.8995,
+          38.4905,
+          3.72
+        ]
+      },
+      "id": "uu80076981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.26,
+        "place": "6 km NW of Cobb, CA",
+        "time": 1722449471090,
+        "updated": 1722451464595,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041922",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041922&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "nc",
+        "code": "75041922",
+        "ids": ",nc75041922,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 8,
+        "dmin": 0.00597,
+        "rms": 0.05,
+        "gap": 196,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 6 km NW of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.78133392334,
+          38.84716796875,
+          11.6099996566772
+        ]
+      },
+      "id": "nc75041922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.1,
+        "place": "14 km SSW of Searles Valley, CA",
+        "time": 1722449470480,
+        "updated": 1730937523843,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678263",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678263&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "ci",
+        "code": "40678263",
+        "ids": ",ci40678263,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 4,
+        "dmin": 0.05362,
+        "rms": 0.07,
+        "gap": 173,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.1 - 14 km SSW of Searles Valley, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4893333,
+          35.6606667,
+          5.01
+        ]
+      },
+      "id": "ci40678263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.75,
+        "place": "7 km NW of The Geysers, CA",
+        "time": 1722448545640,
+        "updated": 1722455536051,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041912",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041912&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "nc",
+        "code": "75041912",
+        "ids": ",nc75041912,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 7,
+        "dmin": 0.005752,
+        "rms": 0.01,
+        "gap": 116,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 7 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.814834594727,
+          38.8190002441406,
+          3.23000001907349
+        ]
+      },
+      "id": "nc75041912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.5,
+        "place": "7 km NNW of Warner Springs, CA",
+        "time": 1722447013230,
+        "updated": 1722457667145,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678143",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678143&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 4,
+        "net": "ci",
+        "code": "40678143",
+        "ids": ",ci40678143,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 27,
+        "dmin": 0.1274,
+        "rms": 0.14,
+        "gap": 58,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.5 - 7 km NNW of Warner Springs, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.6661667,
+          33.3373333,
+          11.63
+        ]
+      },
+      "id": "ci40678143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.29,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722446807780,
+        "updated": 1722455515270,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076966",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076966&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "uu",
+        "code": "80076966",
+        "ids": ",uu80076966,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.01158,
+        "rms": 0.1,
+        "gap": 131,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.899333333333,
+          38.4956666666667,
+          2.86
+        ]
+      },
+      "id": "uu80076966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.48,
+        "place": "11 km WSW of Salton City, CA",
+        "time": 1722446291880,
+        "updated": 1722545215137,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678119",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678119&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 4,
+        "net": "ci",
+        "code": "40678119",
+        "ids": ",ci40678119,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 10,
+        "dmin": 0.07148,
+        "rms": 0.17,
+        "gap": 93,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.5 - 11 km WSW of Salton City, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.0596667,
+          33.2441667,
+          9.04
+        ]
+      },
+      "id": "ci40678119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.69,
+        "place": "19 km S of Trona, CA",
+        "time": 1722445085600,
+        "updated": 1722453594442,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40678087",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40678087&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 7,
+        "net": "ci",
+        "code": "40678087",
+        "ids": ",ci40678087,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 14,
+        "dmin": 0.04824,
+        "rms": 0.11,
+        "gap": 75,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.7 - 19 km S of Trona, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4041667,
+          35.596,
+          6.59
+        ]
+      },
+      "id": "ci40678087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.3,
+        "place": "60 km WNW of Beatty, Nevada",
+        "time": 1722444181017,
+        "updated": 1722452821935,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881728",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881728&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "nn",
+        "code": "00881728",
+        "ids": ",nn00881728,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 12,
+        "dmin": 0.129,
+        "rms": 0.1169,
+        "gap": 124.25,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.3 - 60 km WNW of Beatty, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3849,
+          37.1245,
+          9
+        ]
+      },
+      "id": "nn00881728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.49,
+        "place": "6 km WSW of Dutch Harbor, Alaska",
+        "time": 1722440356050,
+        "updated": 1722468436150,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93216951",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93216951&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 4,
+        "net": "av",
+        "code": "93216951",
+        "ids": ",av93216951,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 11,
+        "dmin": 0.0253,
+        "rms": 0.16,
+        "gap": 113,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.5 - 6 km WSW of Dutch Harbor, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -166.6445,
+          53.876,
+          8.54
+        ]
+      },
+      "id": "av93216951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.57,
+        "place": "6 km NNW of The Geysers, CA",
+        "time": 1722439884420,
+        "updated": 1722441135388,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041877",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041877&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 5,
+        "net": "nc",
+        "code": "75041877",
+        "ids": ",nc75041877,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 8,
+        "dmin": 0.009136,
+        "rms": 0.02,
+        "gap": 87,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.6 - 6 km NNW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.78783416748,
+          38.820499420166,
+          1.69000005722046
+        ]
+      },
+      "id": "nc75041877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.19,
+        "place": "12 km SW of Searles Valley, CA",
+        "time": 1722439398000,
+        "updated": 1730937309640,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677967",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677967&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "ci",
+        "code": "40677967",
+        "ids": ",ci40677967,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 9,
+        "dmin": 0.09248,
+        "rms": 0.11,
+        "gap": 145,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.2 - 12 km SW of Searles Valley, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4815,
+          35.6778333,
+          7.85
+        ]
+      },
+      "id": "ci40677967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.95,
+        "place": "5 km N of Claremont, CA",
+        "time": 1722439112960,
+        "updated": 1722465848116,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677959",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677959&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 14,
+        "net": "ci",
+        "code": "40677959",
+        "ids": ",ci40677959,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 26,
+        "dmin": 0.02718,
+        "rms": 0.18,
+        "gap": 46,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.0 - 5 km N of Claremont, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7181667,
+          34.1426667,
+          6.44
+        ]
+      },
+      "id": "ci40677959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.42,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722439087570,
+        "updated": 1722455241350,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076956",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076956&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 3,
+        "net": "uu",
+        "code": "80076956",
+        "ids": ",uu80076956,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 14,
+        "dmin": 0.005878,
+        "rms": 0.13,
+        "gap": 98,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.4 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.898,
+          38.4876666666667,
+          3.26
+        ]
+      },
+      "id": "uu80076956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.76,
+        "place": "10 km NW of The Geysers, CA",
+        "time": 1722437372690,
+        "updated": 1722444436797,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041852",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041852&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "nc",
+        "code": "75041852",
+        "ids": ",nc75041852,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 15,
+        "dmin": 0.005416,
+        "rms": 0.03,
+        "gap": 94,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 10 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.854331970215,
+          38.8224983215332,
+          1.88999998569489
+        ]
+      },
+      "id": "nc75041852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1,
+        "place": "44 km SE of Denali National Park, Alaska",
+        "time": 1722437091790,
+        "updated": 1725902214211,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249si2j6l",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249si2j6l&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 15,
+        "net": "ak",
+        "code": "0249si2j6l",
+        "ids": ",ak0249si2j6l,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.77,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.0 - 44 km SE of Denali National Park, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.0589,
+          63.2753,
+          5.4
+        ]
+      },
+      "id": "ak0249si2j6l"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.94,
+        "place": "7 km N of Borrego Springs, CA",
+        "time": 1722434205830,
+        "updated": 1722453545417,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677815",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677815&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 14,
+        "net": "ci",
+        "code": "40677815",
+        "ids": ",ci40677815,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 48,
+        "dmin": 0.0127,
+        "rms": 0.2,
+        "gap": 59,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 7 km N of Borrego Springs, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.3771667,
+          33.3171667,
+          5.92
+        ]
+      },
+      "id": "ci40677815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.06,
+        "place": "13 km NE of Milford, Utah",
+        "time": 1722433918340,
+        "updated": 1722449569280,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076946",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076946&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "uu",
+        "code": "80076946",
+        "ids": ",uu80076946,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 13,
+        "dmin": 0.008481,
+        "rms": 0.12,
+        "gap": 104,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.1 - 13 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.902166666667,
+          38.485,
+          2.62
+        ]
+      },
+      "id": "uu80076946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.32,
+        "place": "4 km NNW of The Geysers, CA",
+        "time": 1722432588570,
+        "updated": 1724104845990,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041827",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041827&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "nc",
+        "code": "75041827",
+        "ids": ",nc75041827,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 21,
+        "dmin": 0.009029,
+        "rms": 0.05,
+        "gap": 94,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.3 - 4 km NNW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.778833333333,
+          38.8043333333333,
+          4.07
+        ]
+      },
+      "id": "nc75041827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.9,
+        "place": "62 km S of Cantwell, Alaska",
+        "time": 1722431163597,
+        "updated": 1725902213137,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249sh8qir",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249sh8qir&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 12,
+        "net": "ak",
+        "code": "0249sh8qir",
+        "ids": ",ak0249sh8qir,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.51,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 62 km S of Cantwell, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -148.8298,
+          62.8343,
+          19.9
+        ]
+      },
+      "id": "ak0249sh8qir"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.57,
+        "place": "3 km NNW of Little Lake, CA",
+        "time": 1722429939760,
+        "updated": 1730936594574,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677703",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677703&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 5,
+        "net": "ci",
+        "code": "40677703",
+        "ids": ",ci40677703,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 16,
+        "dmin": 0.05647,
+        "rms": 0.06,
+        "gap": 73,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 3 km NNW of Little Lake, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9228333,
+          35.9576667,
+          7.49
+        ]
+      },
+      "id": "ci40677703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.16,
+        "place": "4 km W of Cobb, CA",
+        "time": 1722429862670,
+        "updated": 1724105064120,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041797",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041797&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "nc",
+        "code": "75041797",
+        "ids": ",nc75041797,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 7,
+        "dmin": 0.008096,
+        "rms": 0.02,
+        "gap": 230,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.2 - 4 km W of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.770666666667,
+          38.8153333333333,
+          0.29
+        ]
+      },
+      "id": "nc75041797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.61,
+        "place": "5 km WNW of Borrego Springs, CA",
+        "time": 1722429314310,
+        "updated": 1722464868940,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677663",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677663&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "ci",
+        "code": "40677663",
+        "ids": ",ci40677663,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 27,
+        "dmin": 0.01177,
+        "rms": 0.19,
+        "gap": 71,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 5 km WNW of Borrego Springs, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4273333,
+          33.2763333,
+          4.88
+        ]
+      },
+      "id": "ci40677663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.76,
+        "place": "3 km NW of The Geysers, CA",
+        "time": 1722426932750,
+        "updated": 1722429265033,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041787",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041787&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "nc",
+        "code": "75041787",
+        "ids": ",nc75041787,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 7,
+        "dmin": 0.006095,
+        "rms": 0.01,
+        "gap": 105,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 3 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.780166625977,
+          38.7924995422363,
+          1.5900000333786
+        ]
+      },
+      "id": "nc75041787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.69,
+        "place": "5 km WNW of Anza, CA",
+        "time": 1722426413790,
+        "updated": 1722457782230,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677647",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677647&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 7,
+        "net": "ci",
+        "code": "40677647",
+        "ids": ",ci40677647,",
+        "sources": ",ci,",
+        "types": ",focal-mechanism,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 48,
+        "dmin": 0.01389,
+        "rms": 0.18,
+        "gap": 37,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.7 - 5 km WNW of Anza, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.7216667,
+          33.5701667,
+          2.87
+        ]
+      },
+      "id": "ci40677647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.61,
+        "place": "8 km NW of Big Bear Lake, CA",
+        "time": 1722426279110,
+        "updated": 1722457746716,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677639",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677639&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "ci",
+        "code": "40677639",
+        "ids": ",ci40677639,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 24,
+        "dmin": 0.05265,
+        "rms": 0.12,
+        "gap": 133,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 8 km NW of Big Bear Lake, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9671667,
+          34.299,
+          5.25
+        ]
+      },
+      "id": "ci40677639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.21,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722425410830,
+        "updated": 1722443318430,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076936",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076936&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "uu",
+        "code": "80076936",
+        "ids": ",uu80076936,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 14,
+        "dmin": 0.005175,
+        "rms": 0.12,
+        "gap": 97,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.2 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.896833333333,
+          38.4878333333333,
+          3.17
+        ]
+      },
+      "id": "uu80076936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.91,
+        "place": "10 km WNW of Cobb, CA",
+        "time": 1722424864340,
+        "updated": 1724104861219,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041782",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041782&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 13,
+        "net": "nc",
+        "code": "75041782",
+        "ids": ",nc75041782,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 28,
+        "dmin": 0.007464,
+        "rms": 0.11,
+        "gap": 111,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.9 - 10 km WNW of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8325,
+          38.8525,
+          2.13
+        ]
+      },
+      "id": "nc75041782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.9,
+        "place": "61 km SSE of Denali National Park, Alaska",
+        "time": 1722424447945,
+        "updated": 1725998947887,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249sg3phx",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249sg3phx&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 12,
+        "net": "ak",
+        "code": "0249sg3phx",
+        "ids": ",ak0249sg3phx,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.83,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 61 km SSE of Denali National Park, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.2814,
+          63.0302,
+          2.2
+        ]
+      },
+      "id": "ak0249sg3phx"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.37,
+        "place": "14 km NE of Milford, Utah",
+        "time": 1722423312000,
+        "updated": 1722442792990,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uu80076931",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uu80076931&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "uu",
+        "code": "80076931",
+        "ids": ",uu80076931,",
+        "sources": ",uu,",
+        "types": ",origin,phase-data,",
+        "nst": 12,
+        "dmin": 0.008476,
+        "rms": 0.09,
+        "gap": 97,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.4 - 14 km NE of Milford, Utah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.900333333333,
+          38.4896666666667,
+          2.95
+        ]
+      },
+      "id": "uu80076931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.9,
+        "place": "23 km NW of Fishhook, Alaska",
+        "time": 1722421491636,
+        "updated": 1725998947103,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249sfkib1",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249sfkib1&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 12,
+        "net": "ak",
+        "code": "0249sfkib1",
+        "ids": ",ak0249sfkib1,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.54,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 23 km NW of Fishhook, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.5189,
+          61.905,
+          42.4
+        ]
+      },
+      "id": "ak0249sfkib1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.9,
+        "place": "88 km NW of Karluk, Alaska",
+        "time": 1722421407570,
+        "updated": 1726003746775,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0249sfk8ug",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ak0249sfk8ug&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 12,
+        "net": "ak",
+        "code": "0249sfk8ug",
+        "ids": ",av93216776,ak0249sfk8ug,",
+        "sources": ",av,ak,",
+        "types": ",origin,phase-data,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.25,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 88 km NW of Karluk, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -155.3731,
+          58.1913,
+          3.9
+        ]
+      },
+      "id": "ak0249sfk8ug"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.4,
+        "place": "17 km W of Doyle, California",
+        "time": 1722420879873,
+        "updated": 1722463853892,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881754",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881754&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "nn",
+        "code": "00881754",
+        "ids": ",nn00881754,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 3,
+        "dmin": 0.139,
+        "rms": 0.0296,
+        "gap": 262.76,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.4 - 17 km W of Doyle, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.3108,
+          40.0004,
+          3.2
+        ]
+      },
+      "id": "nn00881754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.4,
+        "place": "51 km E of Fallon Station, Nevada",
+        "time": 1722419551050,
+        "updated": 1722463669588,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881753",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881753&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "nn",
+        "code": "00881753",
+        "ids": ",nn00881753,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 4,
+        "dmin": 0.115,
+        "rms": 0.0416,
+        "gap": 182.03000000000003,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.4 - 51 km E of Fallon Station, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1149,
+          39.4254,
+          10.4
+        ]
+      },
+      "id": "nn00881753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.08,
+        "place": "21 km S of Morton, Washington",
+        "time": 1722419240110,
+        "updated": 1722454770900,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uw62030351",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=uw62030351&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "uw",
+        "code": "62030351",
+        "ids": ",uw62030351,",
+        "sources": ",uw,",
+        "types": ",origin,phase-data,",
+        "nst": 8,
+        "dmin": 0.06574,
+        "rms": 0.07,
+        "gap": 161,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.1 - 21 km S of Morton, Washington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.32366666666667,
+          46.3705,
+          12.97
+        ]
+      },
+      "id": "uw62030351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.77,
+        "place": "7 km WNW of Cobb, CA",
+        "time": 1722418024700,
+        "updated": 1722420737051,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041767",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041767&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 9,
+        "net": "nc",
+        "code": "75041767",
+        "ids": ",nc75041767,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 13,
+        "dmin": 0.005377,
+        "rms": 0.01,
+        "gap": 74,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.8 - 7 km WNW of Cobb, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.796501159668,
+          38.8359985351562,
+          2.10999989509583
+        ]
+      },
+      "id": "nc75041767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.16,
+        "place": "86 km W of Adak, Alaska",
+        "time": 1722416928450,
+        "updated": 1722464925770,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93016974",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93016974&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "av",
+        "code": "93016974",
+        "ids": ",av93016974,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.06955,
+        "rms": 0.11,
+        "gap": 243,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.2 - 86 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -177.888333333333,
+          51.8641666666667,
+          4.91
+        ]
+      },
+      "id": "av93016974"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.79,
+        "place": "2 km NNE of Loma Linda, CA",
+        "time": 1722416866840,
+        "updated": 1722457779498,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677599",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677599&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "ci",
+        "code": "40677599",
+        "ids": ",ci40677599,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 58,
+        "dmin": 0.04601,
+        "rms": 0.21,
+        "gap": 23,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 2 km NNE of Loma Linda, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2493333,
+          34.0686667,
+          3.11
+        ]
+      },
+      "id": "ci40677599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.98,
+        "place": "10 km ENE of San Martin, CA",
+        "time": 1722415335620,
+        "updated": 1724104857667,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041737",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041737&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 15,
+        "net": "nc",
+        "code": "75041737",
+        "ids": ",nc75041737,",
+        "sources": ",nc,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 24,
+        "dmin": 0.06818,
+        "rms": 0.1,
+        "gap": 55,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 1.0 - 10 km ENE of San Martin, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.529333333333,
+          37.1463333333333,
+          7.35
+        ]
+      },
+      "id": "nc75041737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0,
+        "place": "47 km ESE of Beatty, Nevada",
+        "time": 1722415239589,
+        "updated": 1722451530535,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881710",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881710&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "nn",
+        "code": "00881710",
+        "ids": ",nn00881710,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 27,
+        "dmin": 0.036,
+        "rms": 0.1021,
+        "gap": 43.58000000000004,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.0 - 47 km ESE of Beatty, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.2531,
+          36.7708,
+          9.8
+        ]
+      },
+      "id": "nn00881710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.4,
+        "place": "86 km NNW of Karluk, Alaska",
+        "time": 1722414142800,
+        "updated": 1722464277220,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93016969",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93016969&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 2,
+        "net": "av",
+        "code": "93016969",
+        "ids": ",av93016969,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.0753,
+        "rms": 0.25,
+        "gap": 202,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.4 - 86 km NNW of Karluk, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -155.1465,
+          58.2511666666667,
+          7.46
+        ]
+      },
+      "id": "av93016969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.43,
+        "place": "4 km WNW of Valle Vista, CA",
+        "time": 1722412727220,
+        "updated": 1722457817207,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677567",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677567&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 3,
+        "net": "ci",
+        "code": "40677567",
+        "ids": ",ci40677567,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 27,
+        "dmin": 0.07306,
+        "rms": 0.17,
+        "gap": 92,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.4 - 4 km WNW of Valle Vista, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9296667,
+          33.7601667,
+          13.25
+        ]
+      },
+      "id": "ci40677567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.7,
+        "place": "97 km W of Adak, Alaska",
+        "time": 1722412010920,
+        "updated": 1722461529400,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93216636",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93216636&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 8,
+        "net": "av",
+        "code": "93216636",
+        "ids": ",av93216636,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.02873,
+        "rms": 0.19,
+        "gap": 102,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.7 - 97 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.0525,
+          51.862,
+          -1.78
+        ]
+      },
+      "id": "av93216636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.55,
+        "place": "149 km W of Adak, Alaska",
+        "time": 1722410736440,
+        "updated": 1722448299300,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93216621",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93216621&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 5,
+        "net": "av",
+        "code": "93216621",
+        "ids": ",av93216621,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.02362,
+        "rms": 0.09,
+        "gap": 97,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 149 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.793166666667,
+          51.796,
+          6.91
+        ]
+      },
+      "id": "av93216621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.07,
+        "place": "149 km W of Adak, Alaska",
+        "time": 1722410233230,
+        "updated": 1722447951610,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93216606",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93216606&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 0,
+        "net": "av",
+        "code": "93216606",
+        "ids": ",av93216606,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.02637,
+        "rms": 0.23,
+        "gap": 112,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.1 - 149 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.794666666667,
+          51.7835,
+          6.45
+        ]
+      },
+      "id": "av93216606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.6,
+        "place": "16 km S of Indian Springs, Nevada",
+        "time": 1722408598630,
+        "updated": 1722450048383,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881707",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881707&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "nn",
+        "code": "00881707",
+        "ids": ",nn00881707,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 10,
+        "dmin": 0.352,
+        "rms": 0.2431,
+        "gap": 174.62,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 16 km S of Indian Springs, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.6407,
+          36.4222,
+          0
+        ]
+      },
+      "id": "nn00881707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.8,
+        "place": "8 km ENE of Indian Springs, Nevada",
+        "time": 1722407658421,
+        "updated": 1722448212834,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881705",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881705&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "nn",
+        "code": "00881705",
+        "ids": ",nn00881705,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 22,
+        "dmin": 0.304,
+        "rms": 0.1441,
+        "gap": 140.67000000000002,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 8 km ENE of Indian Springs, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.5882,
+          36.6123,
+          8
+        ]
+      },
+      "id": "nn00881705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.82,
+        "place": "13 km E of Ocotillo Wells, CA",
+        "time": 1722406956840,
+        "updated": 1722457837854,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci40677527",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=ci40677527&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 10,
+        "net": "ci",
+        "code": "40677527",
+        "ids": ",ci40677527,",
+        "sources": ",ci,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 33,
+        "dmin": 0.01667,
+        "rms": 0.21,
+        "gap": 65,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.8 - 13 km E of Ocotillo Wells, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.9911667,
+          33.1611667,
+          6.93
+        ]
+      },
+      "id": "ci40677527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.21,
+        "place": "263 km W of Adak, Alaska",
+        "time": 1722406634050,
+        "updated": 1722461318500,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93016954",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93016954&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "av",
+        "code": "93016954",
+        "ids": ",av93016954,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 4,
+        "dmin": 0.0605,
+        "rms": 0.24,
+        "gap": 280,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.2 - 263 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          179.534666666667,
+          51.958,
+          9.77
+        ]
+      },
+      "id": "av93016954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.5,
+        "place": "22 km ESE of Hawthorne, Nevada",
+        "time": 1722404919023,
+        "updated": 1722461271949,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881749",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881749&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 4,
+        "net": "nn",
+        "code": "00881749",
+        "ids": ",nn00881749,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.215,
+        "rms": 0.1911,
+        "gap": 91.16999999999999,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.5 - 22 km ESE of Hawthorne, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3921,
+          38.4465,
+          11.4
+        ]
+      },
+      "id": "nn00881749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.56,
+        "place": "150 km W of Adak, Alaska",
+        "time": 1722404803370,
+        "updated": 1722447740570,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93216536",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93216536&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 5,
+        "net": "av",
+        "code": "93216536",
+        "ids": ",av93216536,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 5,
+        "dmin": 0.02579,
+        "rms": 0.29,
+        "gap": 146,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 150 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.806333333333,
+          51.7765,
+          7.14
+        ]
+      },
+      "id": "av93216536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.97,
+        "place": "1 km NW of The Geysers, CA",
+        "time": 1722403083420,
+        "updated": 1722453933520,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75041692",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc75041692&format=geojson",
+        "felt": 2,
+        "cdi": 0,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 14,
+        "net": "nc",
+        "code": "75041692",
+        "ids": ",nc75041692,",
+        "sources": ",nc,",
+        "types": ",dyfi,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 11,
+        "dmin": 0.01493,
+        "rms": 0.04,
+        "gap": 106,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 1.0 - 1 km NW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.768669128418,
+          38.7854995727539,
+          0.159999996423721
+        ]
+      },
+      "id": "nc75041692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.29,
+        "place": "267 km W of Adak, Alaska",
+        "time": 1722402771540,
+        "updated": 1722573664720,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/av93216481",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=av93216481&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1,
+        "net": "av",
+        "code": "93216481",
+        "ids": ",av93216481,",
+        "sources": ",av,",
+        "types": ",origin,phase-data,",
+        "nst": 4,
+        "dmin": 0.09525,
+        "rms": 0.3,
+        "gap": 309,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.3 - 267 km W of Adak, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          179.488,
+          51.9835,
+          8.09
+        ]
+      },
+      "id": "av93216481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.6,
+        "place": "50 km WNW of Indian Springs, Nevada",
+        "time": 1722402418177,
+        "updated": 1722447099018,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00881704",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00881704&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 6,
+        "net": "nn",
+        "code": "00881704",
+        "ids": ",nn00881704,",
+        "sources": ",nn,",
+        "types": ",origin,phase-data,",
+        "nst": 30,
+        "dmin": 0.011,
+        "rms": 0.1016,
+        "gap": 39.28,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.6 - 50 km WNW of Indian Springs, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.1991,
+          36.7308,
+          5.9
+        ]
+      },
+      "id": "nn00881704"
+    }
+  ],
+  "bbox": [
+    -178.80633333333,
+    32.7743333,
+    -2,
+    179.53466666667,
+    65.9868,
+    48
+  ]
+}

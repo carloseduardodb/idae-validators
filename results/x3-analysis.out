@@ -1,0 +1,43 @@
+=== X3 — validadores escritos por LLM (por comportamento; 10 por modelo e domínio) ===
+
+financial   V0 pega   0.0%  |  V2 pega  77.8% (rej. falsa   0.0%)
+  claude-opus-4.5   pega mediana  66.7% [ 44.4%– 88.9%]  rej. falsa mediana   9.5% (máx  63.1%)  utilizáveis (rej. falsa ≤1%): 1/10
+  claude-haiku-4.5  pega mediana  88.9% [ 88.9%–100.0%]  rej. falsa mediana  90.8% (máx 100.0%)  utilizáveis (rej. falsa ≤1%): 0/10
+
+iot   V0 pega  42.9%  |  V2 pega 100.0% (rej. falsa   1.2%)
+  claude-opus-4.5   pega mediana  71.4% [ 42.9%–100.0%]  rej. falsa mediana   2.7% (máx  42.7%)  utilizáveis (rej. falsa ≤1%): 3/10
+  claude-haiku-4.5  pega mediana  85.7% [ 57.1%– 85.7%]  rej. falsa mediana  51.9% (máx  69.9%)  utilizáveis (rej. falsa ≤1%): 0/10
+
+usgs-corrected   V0 pega 100.0%  |  V2 pega 100.0% (rej. falsa   0.0%)
+  claude-opus-4.5   pega mediana 100.0% [100.0%–100.0%]  rej. falsa mediana   0.0% (máx  40.4%)  utilizáveis (rej. falsa ≤1%): 6/10
+  claude-haiku-4.5  pega mediana 100.0% [100.0%–100.0%]  rej. falsa mediana  59.3% (máx  59.3%)  utilizáveis (rej. falsa ≤1%): 4/10
+
+usgs-strict   V0 pega  33.3%  |  V2 pega 100.0% (rej. falsa   0.0%)
+  claude-opus-4.5   pega mediana  33.3% [ 33.3%– 83.3%]  rej. falsa mediana   0.0% (máx   0.0%)  utilizáveis (rej. falsa ≤1%): 10/10
+  claude-haiku-4.5  pega mediana 100.0% [ 33.3%–100.0%]  rej. falsa mediana   0.0% (máx   0.0%)  utilizáveis (rej. falsa ≤1%): 10/10
+
+saídas erradas ACEITAS (validador do modelo × programa do modelo):
+  validador claude-opus-4.5  prog claude-opus-4.5:  69.6% (15579/22380)   prog claude-haiku-4.5:  20.3% (5327/26270)
+  validador claude-haiku-4.5 prog claude-opus-4.5:  29.3% (6565/22380)   prog claude-haiku-4.5:  11.3% (2961/26270)
+
+interação (leniência com os próprios erros, controlando permissividade): OR = 2.76  IC95% [0.28, 18.16]  (23 comportamentos defeituosos)
+
+=== X5 — os mesmos validadores após autoverificação iterativa (L → I, por comportamento) ===
+
+financial
+  claude-opus-4.5   pega mediana  66.7% →  77.8%   rej. falsa mediana   9.5% →   9.2%   utilizáveis 1 → 0/10
+  claude-haiku-4.5  pega mediana  88.9% →  88.9%   rej. falsa mediana  90.8% →  89.1%   utilizáveis 0 → 0/10
+
+iot
+  claude-opus-4.5   pega mediana  71.4% →  78.6%   rej. falsa mediana   2.7% →   4.2%   utilizáveis 3 → 4/10
+  claude-haiku-4.5  pega mediana  85.7% →  85.7%   rej. falsa mediana  51.9% →  51.9%   utilizáveis 0 → 0/10
+
+usgs-corrected
+  claude-opus-4.5   pega mediana 100.0% → 100.0%   rej. falsa mediana   0.0% →   0.0%   utilizáveis 6 → 7/10
+  claude-haiku-4.5  pega mediana 100.0% → 100.0%   rej. falsa mediana  59.3% →   0.0%   utilizáveis 4 → 6/10
+
+usgs-strict
+  claude-opus-4.5   pega mediana  33.3% →  33.3%   rej. falsa mediana   0.0% →   0.0%   utilizáveis 10 → 10/10
+  claude-haiku-4.5  pega mediana 100.0% → 100.0%   rej. falsa mediana   0.0% →   0.0%   utilizáveis 10 → 10/10
+
+interação (I): OR = 5.75  IC95% [0.72, 96.79]

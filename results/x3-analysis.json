@@ -1,0 +1,1519 @@
+{
+  "generatedAt": "2026-09-30T21:21:32.448Z",
+  "strength": {
+    "financial": {
+      "V0": {
+        "programs": 23,
+        "wrongAccepted": 438,
+        "wrongBlocked": 0,
+        "rightBlocked": 0,
+        "rightAccepted": 1422,
+        "defective": 9,
+        "caught": 0,
+        "cleared": 0,
+        "errors": 0,
+        "caughtWrongRate": 0,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 0,
+        "programsClearedRate": 0
+      },
+      "V2": {
+        "programs": 23,
+        "wrongAccepted": 100,
+        "wrongBlocked": 338,
+        "rightBlocked": 0,
+        "rightAccepted": 1422,
+        "defective": 9,
+        "caught": 7,
+        "cleared": 7,
+        "errors": 0,
+        "caughtWrongRate": 0.771689497716895,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 0.7777777777777778,
+        "programsClearedRate": 0.7777777777777778
+      },
+      "claude-opus-4.5": {
+        "validators": 10,
+        "caughtMedian": 0.6666666666666666,
+        "caughtMin": 0.4444444444444444,
+        "caughtMax": 0.8888888888888888,
+        "falseRejMedian": 0.0949367088607595,
+        "falseRejMax": 0.630801687763713,
+        "usable": 1
+      },
+      "claude-haiku-4.5": {
+        "validators": 10,
+        "caughtMedian": 0.8888888888888888,
+        "caughtMin": 0.8888888888888888,
+        "caughtMax": 1,
+        "falseRejMedian": 0.9075246132208157,
+        "falseRejMax": 1,
+        "usable": 0
+      }
+    },
+    "iot": {
+      "V0": {
+        "programs": 18,
+        "wrongAccepted": 132,
+        "wrongBlocked": 300,
+        "rightBlocked": 0,
+        "rightAccepted": 1323,
+        "defective": 7,
+        "caught": 3,
+        "cleared": 3,
+        "errors": 0,
+        "caughtWrongRate": 0.6944444444444444,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 0.42857142857142855,
+        "programsClearedRate": 0.42857142857142855
+      },
+      "V2": {
+        "programs": 18,
+        "wrongAccepted": 0,
+        "wrongBlocked": 432,
+        "rightBlocked": 16,
+        "rightAccepted": 1307,
+        "defective": 7,
+        "caught": 7,
+        "cleared": 7,
+        "errors": 0,
+        "caughtWrongRate": 1,
+        "falseRejectionRate": 0.012093726379440665,
+        "programsCaughtRate": 1,
+        "programsClearedRate": 1
+      },
+      "claude-opus-4.5": {
+        "validators": 10,
+        "caughtMedian": 0.7142857142857143,
+        "caughtMin": 0.42857142857142855,
+        "caughtMax": 1,
+        "falseRejMedian": 0.027210884353741496,
+        "falseRejMax": 0.4270597127739985,
+        "usable": 3
+      },
+      "claude-haiku-4.5": {
+        "validators": 10,
+        "caughtMedian": 0.8571428571428571,
+        "caughtMin": 0.5714285714285714,
+        "caughtMax": 0.8571428571428571,
+        "falseRejMedian": 0.5185185185185185,
+        "falseRejMax": 0.6991685563114135,
+        "usable": 0
+      }
+    },
+    "usgs-corrected": {
+      "V0": {
+        "programs": 3,
+        "wrongAccepted": 0,
+        "wrongBlocked": 242,
+        "rightBlocked": 0,
+        "rightAccepted": 565,
+        "defective": 1,
+        "caught": 1,
+        "cleared": 1,
+        "errors": 0,
+        "caughtWrongRate": 1,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 1,
+        "programsClearedRate": 1
+      },
+      "V2": {
+        "programs": 3,
+        "wrongAccepted": 0,
+        "wrongBlocked": 242,
+        "rightBlocked": 0,
+        "rightAccepted": 565,
+        "defective": 1,
+        "caught": 1,
+        "cleared": 1,
+        "errors": 0,
+        "caughtWrongRate": 1,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 1,
+        "programsClearedRate": 1
+      },
+      "claude-opus-4.5": {
+        "validators": 10,
+        "caughtMedian": 1,
+        "caughtMin": 1,
+        "caughtMax": 1,
+        "falseRejMedian": 0,
+        "falseRejMax": 0.40353982300884955,
+        "usable": 6
+      },
+      "claude-haiku-4.5": {
+        "validators": 10,
+        "caughtMedian": 1,
+        "caughtMin": 1,
+        "caughtMax": 1,
+        "falseRejMedian": 0.5929203539823009,
+        "falseRejMax": 0.5929203539823009,
+        "usable": 4
+      }
+    },
+    "usgs-strict": {
+      "V0": {
+        "programs": 7,
+        "wrongAccepted": 899,
+        "wrongBlocked": 237,
+        "rightBlocked": 0,
+        "rightAccepted": 452,
+        "defective": 6,
+        "caught": 2,
+        "cleared": 1,
+        "errors": 0,
+        "caughtWrongRate": 0.20862676056338028,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 0.3333333333333333,
+        "programsClearedRate": 0.16666666666666666
+      },
+      "V2": {
+        "programs": 7,
+        "wrongAccepted": 0,
+        "wrongBlocked": 1136,
+        "rightBlocked": 0,
+        "rightAccepted": 452,
+        "defective": 6,
+        "caught": 6,
+        "cleared": 6,
+        "errors": 0,
+        "caughtWrongRate": 1,
+        "falseRejectionRate": 0,
+        "programsCaughtRate": 1,
+        "programsClearedRate": 1
+      },
+      "claude-opus-4.5": {
+        "validators": 10,
+        "caughtMedian": 0.3333333333333333,
+        "caughtMin": 0.3333333333333333,
+        "caughtMax": 0.8333333333333334,
+        "falseRejMedian": 0,
+        "falseRejMax": 0,
+        "usable": 10
+      },
+      "claude-haiku-4.5": {
+        "validators": 10,
+        "caughtMedian": 1,
+        "caughtMin": 0.3333333333333333,
+        "caughtMax": 1,
+        "falseRejMedian": 0,
+        "falseRejMax": 0,
+        "usable": 10
+      }
+    }
+  },
+  "cross": {
+    "claude-opus-4.5|claude-opus-4.5": {
+      "wrongAccepted": 15579,
+      "wrong": 22380,
+      "rightBlocked": 49654,
+      "right": 662590
+    },
+    "claude-opus-4.5|claude-haiku-4.5": {
+      "wrongAccepted": 5327,
+      "wrong": 26270,
+      "rightBlocked": 3895,
+      "right": 62010
+    },
+    "claude-haiku-4.5|claude-opus-4.5": {
+      "wrongAccepted": 6565,
+      "wrong": 22380,
+      "rightBlocked": 395196,
+      "right": 662590
+    },
+    "claude-haiku-4.5|claude-haiku-4.5": {
+      "wrongAccepted": 2961,
+      "wrong": 26270,
+      "rightBlocked": 24177,
+      "right": 62010
+    }
+  },
+  "selfBias": {
+    "oddsRatio": 2.7559321161450354,
+    "ci95": [
+      0.2794590619076616,
+      18.157187262399066
+    ],
+    "behaviors": 23
+  },
+  "iterative": {
+    "strength": {
+      "financial": {
+        "V0": {
+          "programs": 23,
+          "wrongAccepted": 438,
+          "wrongBlocked": 0,
+          "rightBlocked": 0,
+          "rightAccepted": 1422,
+          "defective": 9,
+          "caught": 0,
+          "cleared": 0,
+          "errors": 0,
+          "caughtWrongRate": 0,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 0,
+          "programsClearedRate": 0
+        },
+        "V2": {
+          "programs": 23,
+          "wrongAccepted": 100,
+          "wrongBlocked": 338,
+          "rightBlocked": 0,
+          "rightAccepted": 1422,
+          "defective": 9,
+          "caught": 7,
+          "cleared": 7,
+          "errors": 0,
+          "caughtWrongRate": 0.771689497716895,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 0.7777777777777778,
+          "programsClearedRate": 0.7777777777777778
+        },
+        "claude-opus-4.5": {
+          "validators": 10,
+          "caughtMedian": 0.7777777777777778,
+          "caughtMin": 0.6666666666666666,
+          "caughtMax": 1,
+          "falseRejMedian": 0.09177215189873418,
+          "falseRejMax": 0.3987341772151899,
+          "usable": 0
+        },
+        "claude-haiku-4.5": {
+          "validators": 10,
+          "caughtMedian": 0.8888888888888888,
+          "caughtMin": 0.8888888888888888,
+          "caughtMax": 1,
+          "falseRejMedian": 0.8909985935302391,
+          "falseRejMax": 0.9796061884669479,
+          "usable": 0
+        }
+      },
+      "iot": {
+        "V0": {
+          "programs": 18,
+          "wrongAccepted": 132,
+          "wrongBlocked": 300,
+          "rightBlocked": 0,
+          "rightAccepted": 1323,
+          "defective": 7,
+          "caught": 3,
+          "cleared": 3,
+          "errors": 0,
+          "caughtWrongRate": 0.6944444444444444,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 0.42857142857142855,
+          "programsClearedRate": 0.42857142857142855
+        },
+        "V2": {
+          "programs": 18,
+          "wrongAccepted": 0,
+          "wrongBlocked": 432,
+          "rightBlocked": 16,
+          "rightAccepted": 1307,
+          "defective": 7,
+          "caught": 7,
+          "cleared": 7,
+          "errors": 0,
+          "caughtWrongRate": 1,
+          "falseRejectionRate": 0.012093726379440665,
+          "programsCaughtRate": 1,
+          "programsClearedRate": 1
+        },
+        "claude-opus-4.5": {
+          "validators": 10,
+          "caughtMedian": 0.7857142857142857,
+          "caughtMin": 0.5714285714285714,
+          "caughtMax": 0.8571428571428571,
+          "falseRejMedian": 0.042328042328042326,
+          "falseRejMax": 0.5729402872260015,
+          "usable": 4
+        },
+        "claude-haiku-4.5": {
+          "validators": 10,
+          "caughtMedian": 0.8571428571428571,
+          "caughtMin": 0.5714285714285714,
+          "caughtMax": 0.8571428571428571,
+          "falseRejMedian": 0.5185185185185185,
+          "falseRejMax": 0.7157974300831443,
+          "usable": 0
+        }
+      },
+      "usgs-corrected": {
+        "V0": {
+          "programs": 3,
+          "wrongAccepted": 0,
+          "wrongBlocked": 242,
+          "rightBlocked": 0,
+          "rightAccepted": 565,
+          "defective": 1,
+          "caught": 1,
+          "cleared": 1,
+          "errors": 0,
+          "caughtWrongRate": 1,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 1,
+          "programsClearedRate": 1
+        },
+        "V2": {
+          "programs": 3,
+          "wrongAccepted": 0,
+          "wrongBlocked": 242,
+          "rightBlocked": 0,
+          "rightAccepted": 565,
+          "defective": 1,
+          "caught": 1,
+          "cleared": 1,
+          "errors": 0,
+          "caughtWrongRate": 1,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 1,
+          "programsClearedRate": 1
+        },
+        "claude-opus-4.5": {
+          "validators": 10,
+          "caughtMedian": 1,
+          "caughtMin": 1,
+          "caughtMax": 1,
+          "falseRejMedian": 0,
+          "falseRejMax": 0.09026548672566372,
+          "usable": 7
+        },
+        "claude-haiku-4.5": {
+          "validators": 10,
+          "caughtMedian": 1,
+          "caughtMin": 1,
+          "caughtMax": 1,
+          "falseRejMedian": 0,
+          "falseRejMax": 0.5929203539823009,
+          "usable": 6
+        }
+      },
+      "usgs-strict": {
+        "V0": {
+          "programs": 7,
+          "wrongAccepted": 899,
+          "wrongBlocked": 237,
+          "rightBlocked": 0,
+          "rightAccepted": 452,
+          "defective": 6,
+          "caught": 2,
+          "cleared": 1,
+          "errors": 0,
+          "caughtWrongRate": 0.20862676056338028,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 0.3333333333333333,
+          "programsClearedRate": 0.16666666666666666
+        },
+        "V2": {
+          "programs": 7,
+          "wrongAccepted": 0,
+          "wrongBlocked": 1136,
+          "rightBlocked": 0,
+          "rightAccepted": 452,
+          "defective": 6,
+          "caught": 6,
+          "cleared": 6,
+          "errors": 0,
+          "caughtWrongRate": 1,
+          "falseRejectionRate": 0,
+          "programsCaughtRate": 1,
+          "programsClearedRate": 1
+        },
+        "claude-opus-4.5": {
+          "validators": 10,
+          "caughtMedian": 0.3333333333333333,
+          "caughtMin": 0.3333333333333333,
+          "caughtMax": 0.8333333333333334,
+          "falseRejMedian": 0,
+          "falseRejMax": 0,
+          "usable": 10
+        },
+        "claude-haiku-4.5": {
+          "validators": 10,
+          "caughtMedian": 1,
+          "caughtMin": 0.3333333333333333,
+          "caughtMax": 1,
+          "falseRejMedian": 0,
+          "falseRejMax": 0,
+          "usable": 10
+        }
+      }
+    },
+    "cross": {
+      "claude-opus-4.5|claude-opus-4.5": {
+        "wrongAccepted": 15264,
+        "wrong": 22380,
+        "rightBlocked": 28763,
+        "right": 662590
+      },
+      "claude-opus-4.5|claude-haiku-4.5": {
+        "wrongAccepted": 4111,
+        "wrong": 26270,
+        "rightBlocked": 2987,
+        "right": 62010
+      },
+      "claude-haiku-4.5|claude-opus-4.5": {
+        "wrongAccepted": 4248,
+        "wrong": 22380,
+        "rightBlocked": 390921,
+        "right": 662590
+      },
+      "claude-haiku-4.5|claude-haiku-4.5": {
+        "wrongAccepted": 2742,
+        "wrong": 26270,
+        "rightBlocked": 22856,
+        "right": 62010
+      }
+    },
+    "selfBias": {
+      "oddsRatio": 5.751091150631929,
+      "ci95": [
+        0.720910125876886,
+        96.79302233220272
+      ],
+      "behaviors": 23
+    },
+    "paired": [
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-01",
+        "caught": [
+          0.8888888888888888,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          0.9057665260196905,
+          0.9057665260196905
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-02",
+        "caught": [
+          0.8888888888888888,
+          1
+        ],
+        "falseRej": [
+          0.9092827004219409,
+          0.8319268635724332
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-03",
+        "caught": [
+          0.8888888888888888,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          0.9057665260196905,
+          0.9057665260196905
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-04",
+        "caught": [
+          0.8888888888888888,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          0.9057665260196905,
+          0.8762306610407876
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-05",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.8846694796061885,
+          0.8319268635724332
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-06",
+        "caught": [
+          1,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          1,
+          0.8656821378340366
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-07",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.8846694796061885,
+          0.8319268635724332
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-08",
+        "caught": [
+          0.8888888888888888,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          0.9796061884669479,
+          0.9796061884669479
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-09",
+        "caught": [
+          0.8888888888888888,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          0.9092827004219409,
+          0.9092827004219409
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-haiku-4.5",
+        "name": "financial:claude-haiku-4.5-10",
+        "caught": [
+          0.8888888888888888,
+          0.8888888888888888
+        ],
+        "falseRej": [
+          0.9796061884669479,
+          0.9796061884669479
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-01",
+        "caught": [
+          0.6666666666666666,
+          1
+        ],
+        "falseRej": [
+          0.09845288326300984,
+          0.0759493670886076
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-02",
+        "caught": [
+          0.4444444444444444,
+          0.6666666666666666
+        ],
+        "falseRej": [
+          0,
+          0.026722925457102673
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-03",
+        "caught": [
+          0.5555555555555556,
+          0.6666666666666666
+        ],
+        "falseRej": [
+          0.0808720112517581,
+          0.026722925457102673
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-04",
+        "caught": [
+          0.5555555555555556,
+          1
+        ],
+        "falseRej": [
+          0.07032348804500703,
+          0.3987341772151899
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-05",
+        "caught": [
+          0.8888888888888888,
+          0.6666666666666666
+        ],
+        "falseRej": [
+          0.15119549929676512,
+          0.026722925457102673
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-06",
+        "caught": [
+          0.5555555555555556,
+          0.6666666666666666
+        ],
+        "falseRej": [
+          0.0808720112517581,
+          0.026722925457102673
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-07",
+        "caught": [
+          0.6666666666666666,
+          0.7777777777777778
+        ],
+        "falseRej": [
+          0.09142053445850915,
+          0.10759493670886076
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-08",
+        "caught": [
+          0.8888888888888888,
+          1
+        ],
+        "falseRej": [
+          0.15119549929676512,
+          0.1568213783403657
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-09",
+        "caught": [
+          0.7777777777777778,
+          0.7777777777777778
+        ],
+        "falseRej": [
+          0.630801687763713,
+          0.10759493670886076
+        ]
+      },
+      {
+        "domain": "financial",
+        "model": "claude-opus-4.5",
+        "name": "financial:claude-opus-4.5-10",
+        "caught": [
+          0.6666666666666666,
+          0.7777777777777778
+        ],
+        "falseRej": [
+          0.09845288326300984,
+          0.12517580872011252
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-01",
+        "caught": [
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.5993953136810279,
+          0.5993953136810279
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-02",
+        "caught": [
+          0.7142857142857143,
+          0.7142857142857143
+        ],
+        "falseRej": [
+          0.363567649281935,
+          0.363567649281935
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-03",
+        "caught": [
+          0.7142857142857143,
+          0.7142857142857143
+        ],
+        "falseRej": [
+          0.363567649281935,
+          0.363567649281935
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-04",
+        "caught": [
+          0.5714285714285714,
+          0.5714285714285714
+        ],
+        "falseRej": [
+          0.09977324263038549,
+          0.1473922902494331
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-05",
+        "caught": [
+          0.7142857142857143,
+          0.7142857142857143
+        ],
+        "falseRej": [
+          0.4527588813303099,
+          0.4527588813303099
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-06",
+        "caught": [
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.5185185185185185,
+          0.5185185185185185
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-07",
+        "caught": [
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.5185185185185185,
+          0.5185185185185185
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-08",
+        "caught": [
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.5411942554799698,
+          0.6341647770219199
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-09",
+        "caught": [
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.5993953136810279,
+          0.5993953136810279
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-haiku-4.5",
+        "name": "iot:claude-haiku-4.5-10",
+        "caught": [
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.6991685563114135,
+          0.7157974300831443
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-01",
+        "caught": [
+          1,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.4270597127739985,
+          0.5729402872260015
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-02",
+        "caught": [
+          0.7142857142857143,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.12698412698412698,
+          0
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-03",
+        "caught": [
+          0.7142857142857143,
+          0.7142857142857143
+        ],
+        "falseRej": [
+          0.15495086923658352,
+          0.15495086923658352
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-04",
+        "caught": [
+          0.7142857142857143,
+          0.7142857142857143
+        ],
+        "falseRej": [
+          0.1436130007558579,
+          0.35222978080120937
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-05",
+        "caught": [
+          0.7142857142857143,
+          0.7142857142857143
+        ],
+        "falseRej": [
+          0.003779289493575208,
+          0.003779289493575208
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-06",
+        "caught": [
+          0.7142857142857143,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0.027210884353741496,
+          0.042328042328042326
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-07",
+        "caught": [
+          0.7142857142857143,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-08",
+        "caught": [
+          0.42857142857142855,
+          0.5714285714285714
+        ],
+        "falseRej": [
+          0.027210884353741496,
+          0.042328042328042326
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-09",
+        "caught": [
+          0.42857142857142855,
+          0.5714285714285714
+        ],
+        "falseRej": [
+          0.027210884353741496,
+          0.042328042328042326
+        ]
+      },
+      {
+        "domain": "iot",
+        "model": "claude-opus-4.5",
+        "name": "iot:claude-opus-4.5-10",
+        "caught": [
+          0.42857142857142855,
+          0.8571428571428571
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-01",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.5929203539823009,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-02",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.5929203539823009,
+          0.5929203539823009
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-03",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.5929203539823009,
+          0.5929203539823009
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-04",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.5929203539823009,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-05",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-06",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.5929203539823009,
+          0.5752212389380531
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-07",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-08",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-09",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-corrected:claude-haiku-4.5-10",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.5929203539823009,
+          0.5929203539823009
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-01",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-02",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-03",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.09026548672566372,
+          0.09026548672566372
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-04",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-05",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.09026548672566372,
+          0.09026548672566372
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-06",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.09026548672566372,
+          0.09026548672566372
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-07",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0.40353982300884955,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-08",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-09",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-corrected",
+        "model": "claude-opus-4.5",
+        "name": "usgs-corrected:claude-opus-4.5-10",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-01",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-02",
+        "caught": [
+          0.5,
+          0.5
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-03",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-04",
+        "caught": [
+          0.3333333333333333,
+          0.8333333333333334
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-05",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-06",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-07",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-08",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-09",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-haiku-4.5",
+        "name": "usgs-strict:claude-haiku-4.5-10",
+        "caught": [
+          1,
+          1
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-01",
+        "caught": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-02",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-03",
+        "caught": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-04",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-05",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-06",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-07",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-08",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-09",
+        "caught": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      },
+      {
+        "domain": "usgs-strict",
+        "model": "claude-opus-4.5",
+        "name": "usgs-strict:claude-opus-4.5-10",
+        "caught": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "falseRej": [
+          0,
+          0
+        ]
+      }
+    ]
+  }
+}

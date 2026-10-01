@@ -1,0 +1,19 @@
+{
+  "programs": 141,
+  "generated": 3525,
+  "noChange": 2335,
+  "onlyRejectOrCrash": 419,
+  "duplicates": 506,
+  "kept": 265,
+  "byOp": {
+    "NUM×10": 112,
+    "NUM+1": 88,
+    "AOR/*": 7,
+    "NEG": 15,
+    "AOR*/": 18,
+    "REJ": 11,
+    "AOR-+": 3,
+    "STR": 1,
+    "UTC": 10
+  }
+}

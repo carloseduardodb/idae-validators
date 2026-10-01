@@ -1,0 +1,22 @@
+{
+  "name": "idae-validators",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Construção e medição de validadores para programas sintetizados por LLM (Claude Opus 4.5), derivado do IDAE",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "TZ=America/Sao_Paulo node --no-warnings --test tests/*.test.js",
+    "corpus": "TZ=America/Sao_Paulo node --no-warnings experiments/x0-corpus.js",
+    "synth": "TZ=America/Sao_Paulo node --no-warnings experiments/x0b-synth.js",
+    "x1": "TZ=America/Sao_Paulo node --no-warnings experiments/x1-real-faults.js",
+    "x2": "TZ=America/Sao_Paulo node --no-warnings experiments/x2-mutation.js",
+    "x3": "TZ=America/Sao_Paulo node --no-warnings experiments/x3-llm-validators.js",
+    "x4": "TZ=America/Sao_Paulo node --no-warnings experiments/x4-cost.js",
+    "x5": "TZ=America/Sao_Paulo node --no-warnings experiments/x5-iterative-validators.js",
+    "x6": "TZ=America/Sao_Paulo node --no-warnings experiments/x6-golden.js",
+    "x3-analysis": "node --no-warnings experiments/x3-analysis.js"
+  }
+}

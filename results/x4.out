@@ -1,0 +1,41 @@
+=== X4 — custo por verificação (µs, mediana / p95) e execuções extras do programa por registro ===
+
+financial  (LOC: V0 12, módulo V2/V3 276, LLM mediana 53)
+  V0        1.0 /      5.3 µs   execuções extras 0.00
+  V1        1.1 /      1.7 µs   execuções extras 0.00
+  V2       50.2 /    146.8 µs   execuções extras 0.00
+  V3      726.5 /    938.5 µs   execuções extras 5.67
+  V23     796.0 /   1019.9 µs   execuções extras 5.67
+  V4      146.6 /    240.5 µs   execuções extras 1.00
+  L:*  mediana das medianas 112.3 µs (20 validadores)
+  I:*  mediana das medianas 113.9 µs (20 validadores; LOC mediana 72; chamadas médias para criar 4.3)
+
+iot  (LOC: V0 12, módulo V2/V3 299, LLM mediana 54)
+  V0        0.8 /      2.9 µs   execuções extras 0.00
+  V1        1.0 /      1.5 µs   execuções extras 0.00
+  V2       58.7 /    238.2 µs   execuções extras 0.00
+  V3      626.3 /    782.2 µs   execuções extras 5.00
+  V23     650.6 /   1034.0 µs   execuções extras 5.00
+  V4      143.6 /    185.0 µs   execuções extras 1.00
+  L:*  mediana das medianas 105.3 µs (20 validadores)
+  I:*  mediana das medianas 106.8 µs (20 validadores; LOC mediana 71; chamadas médias para criar 4.7)
+
+usgs-corrected  (LOC: V0 6, módulo V2/V3 301, LLM mediana 88)
+  V0        1.8 /     89.7 µs   execuções extras 0.00
+  V1        0.9 /     17.6 µs   execuções extras 0.00
+  V2      106.1 /   1290.4 µs   execuções extras 0.00
+  V3      688.0 /   1319.3 µs   execuções extras 5.00
+  V23     667.4 /    868.1 µs   execuções extras 5.00
+  V4      170.2 /    255.1 µs   execuções extras 1.00
+  L:*  mediana das medianas 113.7 µs (20 validadores)
+  I:*  mediana das medianas 119.6 µs (20 validadores; LOC mediana 89; chamadas médias para criar 2.7)
+
+usgs-strict  (LOC: V0 6, módulo V2/V3 301, LLM mediana 39)
+  V0        0.7 /     38.2 µs   execuções extras 0.00
+  V1        0.8 /     14.6 µs   execuções extras 0.00
+  V2       60.7 /    913.1 µs   execuções extras 0.00
+  V3      680.1 /   1268.3 µs   execuções extras 5.00
+  V23     702.9 /    779.7 µs   execuções extras 5.00
+  V4      188.0 /    223.9 µs   execuções extras 1.00
+  L:*  mediana das medianas 108.4 µs (20 validadores)
+  I:*  mediana das medianas 107.7 µs (20 validadores; LOC mediana 45; chamadas médias para criar 1.6)

@@ -1,0 +1,169 @@
+{
+  "generatedAt": "2026-09-30T18:27:09.096Z",
+  "tz": "America/Sao_Paulo",
+  "responses": 1752,
+  "uniquePrograms": 1068,
+  "skipped": {
+    "nao-e-sintese-sob-telos": 3186,
+    "telos-fora-dos-dominios": 5
+  },
+  "byDomain": {
+    "financial": {
+      "programs": 549,
+      "byModel": {
+        "claude-haiku-4.5": 43,
+        "claude-opus-4.5": 506
+      },
+      "labels": {
+        "incomplete": 27,
+        "defective": 48,
+        "correct": 474
+      },
+      "behaviors": {
+        "incomplete": 10,
+        "defective": 9,
+        "correct": 11
+      },
+      "compileErrors": 0,
+      "records": {
+        "right": 39926,
+        "wrong": 1074,
+        "miss": 1860
+      },
+      "wrongFields": {
+        "date": 140,
+        "value_in_usd": 859,
+        "<should-reject>": 50,
+        "category": 25
+      },
+      "sigs": {
+        "json:amount,currency,timestamp,transaction_id": 155,
+        "json:data_hora,id_transacao,moeda,valor": 47,
+        "json:category,date,orig_currency,ref,value_usd": 53,
+        "pipe:4": 51,
+        "csv": 32,
+        "json:amount,timestamp,transaction_id": 93,
+        "json:amount,currency,transaction_id": 39,
+        "json:celsius,humidity,sensor": 55,
+        "pipe:3": 6,
+        "json:created_at,payment": 6,
+        "other": 6,
+        "json:codigo,divisa,emissao,total": 6
+      }
+    },
+    "iot": {
+      "programs": 476,
+      "byModel": {
+        "claude-haiku-4.5": 47,
+        "claude-opus-4.5": 429
+      },
+      "labels": {
+        "correct": 457,
+        "defective": 9,
+        "incomplete": 10
+      },
+      "behaviors": {
+        "correct": 13,
+        "defective": 7,
+        "incomplete": 5
+      },
+      "compileErrors": 0,
+      "records": {
+        "right": 31063,
+        "wrong": 632,
+        "miss": 935
+      },
+      "wrongFields": {
+        "timestamp_utc": 605,
+        "value": 17,
+        "status": 17,
+        "<should-reject>": 10
+      },
+      "sigs": {
+        "json:device_id,metric,timestamp,unit,value,zone": 80,
+        "json:location,measurement_unit,reading_type,reading_value,recorded_at,sensor_id": 48,
+        "json:area,id,ts,type,unit,val": 40,
+        "pipe:6": 52,
+        "csv": 46,
+        "json:device_id,timestamp,value,zone": 58,
+        "json:amount,currency,timestamp,transaction_id": 50,
+        "json:device_id,metric,unit,value,zone": 42,
+        "json:device_id,metric,timestamp,unit,value": 36,
+        "pipe:4": 6,
+        "json:device,reading,ts": 6,
+        "other": 6,
+        "json:area,epoch_ms,measure,node,reading": 6
+      }
+    },
+    "usgs-corrected": {
+      "programs": 22,
+      "byModel": {
+        "claude-opus-4.5": 14,
+        "claude-haiku-4.5": 8
+      },
+      "labels": {
+        "correct": 20,
+        "defective": 2
+      },
+      "behaviors": {
+        "correct": 2,
+        "defective": 1
+      },
+      "compileErrors": 0,
+      "records": {
+        "right": 5510,
+        "wrong": 484,
+        "miss": 166
+      },
+      "wrongFields": {
+        "place": 484,
+        "event_type": 484,
+        "status": 484
+      },
+      "sigs": {
+        "json:geojson": 11,
+        "csv": 11
+      }
+    },
+    "usgs-strict": {
+      "programs": 21,
+      "byModel": {
+        "claude-opus-4.5": 13,
+        "claude-haiku-4.5": 8
+      },
+      "labels": {
+        "correct": 10,
+        "defective": 11
+      },
+      "behaviors": {
+        "correct": 1,
+        "defective": 6
+      },
+      "compileErrors": 0,
+      "records": {
+        "right": 3155,
+        "wrong": 2675,
+        "miss": 0
+      },
+      "wrongFields": {
+        "<should-reject>": 2675
+      },
+      "sigs": {
+        "json:geojson": 11,
+        "csv": 10
+      }
+    }
+  },
+  "byModelLabel": {
+    "claude-haiku-4.5": {
+      "incomplete": 23,
+      "correct": 58,
+      "defective": 25
+    },
+    "claude-opus-4.5": {
+      "defective": 45,
+      "correct": 903,
+      "incomplete": 14
+    }
+  }
+}

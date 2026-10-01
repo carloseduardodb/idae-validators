@@ -1,0 +1,2765 @@
+{
+  "rounds": 5,
+  "summary": [
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 1,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 2,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 3,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 3,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 4,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 5,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 6,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 7,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 8,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 9,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-haiku-4.5",
+      "k": 10,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 1,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 17,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 2,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 18,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 3,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 16,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 4,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 19,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 5,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 16,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 6,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 16,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 7,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 21,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 5,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 8,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 16,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 9,
+      "chosenRound": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 5,
+          "wrongAccepted": 8,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "financial",
+      "model": "claude-opus-4.5",
+      "k": 10,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 16,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 72
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 1,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 11,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 6,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 2,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 22,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 9,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 9,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 29,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 10,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 3,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 22,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 4,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 38,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 29,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 8,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 5,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 13,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 6,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 6,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 6,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 19,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 7,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 13,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 7,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 19,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 13,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 8,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 18,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 14,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 14,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 14,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 9,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 11,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 6,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-haiku-4.5",
+      "k": 10,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 7,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 1,
+      "chosenRound": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 5,
+          "wrongAccepted": 6,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 3,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 2,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 10,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 5,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 3,
+      "chosenRound": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 12,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 5,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 4,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 10,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 5,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 5,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 4,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 5,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 20,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 10,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 3,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 4,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 3,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 6,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 11,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 5,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 7,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 18,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 8,
+      "chosenRound": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 11,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 2,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 9,
+      "chosenRound": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 11,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 2,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 1,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "iot",
+      "model": "claude-opus-4.5",
+      "k": 10,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 14,
+          "nRight": 9,
+          "nWrong": 81
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 9,
+          "nWrong": 81
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 1,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 2,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 3,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 4,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 5,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 6,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 2,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 7,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 8,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 9,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-haiku-4.5",
+      "k": 10,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 1,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 2,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 2,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 3,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 4,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 5,
+      "chosenRound": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 8,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 6,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 7,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 2,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 11,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 7,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 7,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 8,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 5,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 9,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 4,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 2,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-corrected",
+      "model": "claude-opus-4.5",
+      "k": 10,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 5,
+          "nRight": 2,
+          "nWrong": 41
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 2,
+          "nWrong": 41
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 1,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 2,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 3,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 4,
+      "chosenRound": 5,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 8,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 4,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 4,
+          "compileError": null,
+          "falseRejections": 1,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 5,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 5,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 4,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 6,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 7,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 8,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 9,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 2,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-haiku-4.5",
+      "k": 10,
+      "chosenRound": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 1,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 1,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 2,
+      "chosenRound": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 2,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 2,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 10,
+          "nRight": 1,
+          "nWrong": 22
+        },
+        {
+          "round": 3,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 3,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 4,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 5,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 6,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 7,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 8,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 9,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    },
+    {
+      "domain": "usgs-strict",
+      "model": "claude-opus-4.5",
+      "k": 10,
+      "chosenRound": 1,
+      "rounds": [
+        {
+          "round": 1,
+          "compileError": null,
+          "falseRejections": 0,
+          "wrongAccepted": 0,
+          "nRight": 1,
+          "nWrong": 22
+        }
+      ]
+    }
+  ]
+}

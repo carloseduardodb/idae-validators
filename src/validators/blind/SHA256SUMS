@@ -1,0 +1,4 @@
+f8bfa3fb17a2ae1ff39f747e7ff567c6ad98ff51df6214cc49b4099a53ce966b  src/validators/blind/financial.js
+0884072a253e017ae4d2767e549186cccd2cc92d1c6e2ba8b84814fb6866071f  src/validators/blind/iot.js
+4fc0520820c587cdf0384e406131aad0d9c76f004079bfeb4d767c2b791e8850  src/validators/blind/usgs-corrected.js
+351b32a887b8710d7776af6402cd71e34487cebe0ae1c5c3c6553dac29b66ad9  src/validators/blind/usgs-strict.js
