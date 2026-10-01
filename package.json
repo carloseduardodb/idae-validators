@@ -17,6 +17,7 @@
     "x4": "TZ=America/Sao_Paulo node --no-warnings experiments/x4-cost.js",
     "x5": "TZ=America/Sao_Paulo node --no-warnings experiments/x5-iterative-validators.js",
     "x6": "TZ=America/Sao_Paulo node --no-warnings experiments/x6-golden.js",
-    "x3-analysis": "node --no-warnings experiments/x3-analysis.js"
+    "x3-analysis": "node --no-warnings experiments/x3-analysis.js",
+    "x7": "TZ=America/Sao_Paulo node --no-warnings experiments/x7-task-impact.js && node --no-warnings experiments/x7-gates.js"
   }
 }

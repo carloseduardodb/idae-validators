@@ -354,3 +354,25 @@ raros) V2 pega. "Primeiros" é favorecido pela ordem do fluxo sintético
 8 páginas; todos os números conferidos contra `results/*.json`.
 Pendências antes de publicar: leitura do autor; repositório público e link
 dos artefatos; versão em inglês para o arXiv.
+
+## 17. RQ6 — impacto na tarefa (X7, versão 3 do artigo)
+
+Vindo do estudo "Quando o bug vira feature" (repositório local
+`idae-bug-feature`, não publicado), onde as tarefas foram escritas e
+congeladas antes da primeira execução. Copiado para cá com o mesmo hash
+(`TASKS.sha256`); a saída do X7 aqui é idêntica à de lá.
+
+- 14 tarefas de consumo com tolerância declarada (5 financeiro, 4 IoT, 5 USGS),
+  3 que exigem exatidão. Escopos: formato (só a fonte) e fluxo (domínio).
+- Controle: 961/961 programas corretos resolvem todas.
+- Formato: 3 inofensivos, 12 depende, 8 graves (programas: 5/46/19).
+  Os 3 inofensivos são o mesmo defeito (milissegundos no timestamp do IoT).
+- V0 pega 6, dos quais os 3 inofensivos; deixa passar 17, todos com dano.
+- Dano aceito entre os 20 não inofensivos: V0 17, G primeiro par 5, V2 2,
+  G primeiro par + V2 0, oráculo exato 0. Todos rejeitam os 3 inofensivos.
+- Fluxo: 3/19/1; proporções e rankings toleram quase tudo, totais e médias
+  não (×100: total mensal do domínio errado em 1.549%; dupla conversão 3,2%).
+- 13 dos 15 formatos com defeito têm ao menos um programa correto no corpus;
+  os outros dois são o CSV do USGS estrito e o financeiro `pipe:3` (P7).
+- O estudo de geração de fases de jogo (B4) do mesmo repositório deu 0
+  desvios jogáveis em 30 programas e não entrou no artigo.

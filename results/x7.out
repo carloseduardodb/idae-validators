@@ -1,0 +1,101 @@
+
+=== X7 — escopo formato ===
+defective-behaviors    n=  23  inofensivo    3  depende   12  grave    8  ok em todas as não estritas    4
+defective-programs     n=  70  inofensivo    5  depende   46  grave   19  ok em todas as não estritas    7
+incomplete-behaviors   n=  15  inofensivo    0  depende    3  grave   12  ok em todas as não estritas    0
+incomplete-programs    n=  37  inofensivo    0  depende    8  grave   29  ok em todas as não estritas    0
+correct-behaviors      n=  27  inofensivo   27  depende    0  grave    0  ok em todas as não estritas   27
+correct-programs       n= 961  inofensivo  961  depende    0  grave    0  ok em todas as não estritas  961
+tarefa                         toleram (comportamentos defeituosos)
+financial:F1           Total em USD por mês                             2/9
+financial:F2           Total em USD por categoria                       2/9
+financial:F3           Fração de transações internacionais              5/9
+financial:F4           Dez maiores transações                           5/9
+financial:F5*          Conciliação diária (total por dia)               1/9
+iot:I1                 Média por métrica, zona e mês                    3/7
+iot:I2                 Alertas críticos por métrica e mês               5/7
+iot:I3                 Distribuição de (métrica, status)                4/7
+iot:I4*                Série de alertas críticos (dispositivo, minuto UTC) 4/7
+usgs-corrected:U1      Eventos por tipo                                 0/1
+usgs-corrected:U2      Eventos de magnitude ≥ 4 por região              0/1
+usgs-corrected:U3      Profundidade média por região                    0/1
+usgs-corrected:U4      Dez eventos mais significativos                  1/1
+usgs-corrected:U5*     Eventos por dia UTC                              0/1
+usgs-strict:U1         Eventos por tipo                                 0/6
+usgs-strict:U2         Eventos de magnitude ≥ 4 por região              2/6
+usgs-strict:U3         Profundidade média por região                    0/6
+usgs-strict:U4         Dez eventos mais significativos                  1/6
+usgs-strict:U5*        Eventos por dia UTC                              0/6
+
+=== X7 — escopo fluxo ===
+defective-behaviors    n=  23  inofensivo    3  depende   19  grave    1  ok em todas as não estritas    4
+defective-programs     n=  70  inofensivo    5  depende   63  grave    2  ok em todas as não estritas    7
+incomplete-behaviors   n=  15  inofensivo    0  depende   14  grave    1  ok em todas as não estritas    0
+incomplete-programs    n=  37  inofensivo    0  depende   36  grave    1  ok em todas as não estritas    0
+correct-behaviors      n=  27  inofensivo   27  depende    0  grave    0  ok em todas as não estritas   27
+correct-programs       n= 961  inofensivo  961  depende    0  grave    0  ok em todas as não estritas  961
+tarefa                         toleram (comportamentos defeituosos)
+financial:F1           Total em USD por mês                             3/9
+financial:F2           Total em USD por categoria                       2/9
+financial:F3           Fração de transações internacionais              8/9
+financial:F4           Dez maiores transações                           5/9
+financial:F5*          Conciliação diária (total por dia)               1/9
+iot:I1                 Média por métrica, zona e mês                    3/7
+iot:I2                 Alertas críticos por métrica e mês               5/7
+iot:I3                 Distribuição de (métrica, status)                6/7
+iot:I4*                Série de alertas críticos (dispositivo, minuto UTC) 4/7
+usgs-corrected:U1      Eventos por tipo                                 0/1
+usgs-corrected:U2      Eventos de magnitude ≥ 4 por região              0/1
+usgs-corrected:U3      Profundidade média por região                    0/1
+usgs-corrected:U4      Dez eventos mais significativos                  1/1
+usgs-corrected:U5*     Eventos por dia UTC                              0/1
+usgs-strict:U1         Eventos por tipo                                 0/6
+usgs-strict:U2         Eventos de magnitude ≥ 4 por região              2/6
+usgs-strict:U3         Profundidade média por região                    0/6
+usgs-strict:U4         Dez eventos mais significativos                  6/6
+usgs-strict:U5*        Eventos por dia UTC                              0/6
+
+=== Comportamentos defeituosos (escopo formato; ✓ = resolve o caso) ===
+financial       json:data_hora,id_transacao,moed {"date":20}                                  V2:pega  F1✓ F2✓ F3✓ F4✓ F5✗  → depende | fluxo: depende
+iot             json:location,measurement_unit,r {"timestamp_utc":100}                        V2:pega  I1✓ I2✓ I3✓ I4✓  → inofensivo | fluxo: inofensivo
+financial       csv                              {"value_in_usd":98}                          V2:pega  F1✗ F2✗ F3✓ F4✓ F5✗  → depende | fluxo: depende
+financial       json:amount,currency,timestamp,t {"value_in_usd":5}                           V2:pega  F1✗ F2✗ F3✓ F4✗ F5✗  → depende | fluxo: depende
+usgs-strict     csv                              {"<should-reject>":323}                      V2:pega  U1✗ U2✗ U3✗ U4✗ U5✗  → grave | fluxo: depende
+usgs-strict     csv                              {"<should-reject>":330}                      V2:pega  U1✗ U2✗ U3✗ U4✗ U5✗  → grave | fluxo: depende
+usgs-strict     json:geojson                     {"<should-reject>":4}                        V2:pega  U1✗ U2✓ U3✗ U4✓ U5✗  → depende | fluxo: depende
+financial       json:amount,timestamp,transactio {"<should-reject>":5}                        V2:pega  F1✗ F2✗ F3✗ F4✗ F5✗  → grave | fluxo: depende
+financial       json:category,date,orig_currency {"value_in_usd":75}                          V2:não   F1✗ F2✗ F3✓ F4✗ F5✗  → depende | fluxo: depende
+financial       json:category,date,orig_currency {"category":25}                              V2:não   F1✓ F2✗ F3✗ F4✓ F5✓  → depende | fluxo: depende
+financial       pipe:3                           {"<should-reject>":5}                        V2:pega  F1✗ F2✗ F3✗ F4✗ F5✗  → grave | fluxo: depende
+financial       json:created_at,payment          {"value_in_usd":100,"<should-reject>":5}     V2:pega  F1✗ F2✗ F3✗ F4✓ F5✗  → depende | fluxo: depende
+financial       json:created_at,payment          {"date":100}                                 V2:pega  F1✗ F2✓ F3✓ F4✓ F5✗  → depende | fluxo: depende
+iot             json:area,id,ts,type,unit,val    {"timestamp_utc":100}                        V2:pega  I1✓ I2✓ I3✓ I4✓  → inofensivo | fluxo: inofensivo
+iot             json:area,id,ts,type,unit,val    {"value":17,"status":17}                     V2:pega  I1✗ I2✗ I3✗ I4✗  → grave | fluxo: depende
+iot             pipe:4                           {"timestamp_utc":105}                        V2:pega  I1✗ I2✓ I3✓ I4✗  → depende | fluxo: depende
+iot             json:device,reading,ts           {"<should-reject>":5}                        V2:pega  I1✗ I2✓ I3✗ I4✓  → depende | fluxo: depende
+iot             json:device,reading,ts           {"<should-reject>":5}                        V2:pega  I1✗ I2✗ I3✗ I4✗  → grave | fluxo: grave
+iot             json:area,epoch_ms,measure,node, {"timestamp_utc":100}                        V2:pega  I1✓ I2✓ I3✓ I4✓  → inofensivo | fluxo: inofensivo
+usgs-corrected  csv                              {"place":242,"event_type":242,"status":242}  V2:pega  U1✗ U2✗ U3✗ U4✓ U5✗  → depende | fluxo: depende
+usgs-strict     csv                              {"<should-reject>":240}                      V2:pega  U1✗ U2✗ U3✗ U4✗ U5✗  → grave | fluxo: depende
+usgs-strict     csv                              {"<should-reject>":237}                      V2:pega  U1✗ U2✗ U3✗ U4✗ U5✗  → grave | fluxo: depende
+usgs-strict     csv                              {"<should-reject>":2}                        V2:pega  U1✗ U2✓ U3✗ U4✗ U5✗  → depende | fluxo: depende
+
+=== X7 — inofensivo = resolve todas as tarefas (3 inofensivos, 20 com dano) ===
+portão                  rejeitados à toa   aceitos com dano
+V0 formato                 3.00 / 3       17.00 / 20
+V2 propriedades            3.00 / 3        2.00 / 20
+G primeiro par             3.00 / 3        5.00 / 20
+G 3 sorteados              3.00 / 3        5.19 / 20
+G primeiro par + V2        3.00 / 3        0.00 / 20
+G 3 sorteados + V2         3.00 / 3        0.43 / 20
+Oráculo exato              3.00 / 3        0.00 / 20
+
+=== X7 — inofensivo = resolve todas as não estritas (4 inofensivos, 19 com dano) ===
+portão                  rejeitados à toa   aceitos com dano
+V0 formato                 3.00 / 4       16.00 / 19
+V2 propriedades            4.00 / 4        2.00 / 19
+G primeiro par             3.00 / 4        4.00 / 19
+G 3 sorteados              3.49 / 4        4.69 / 19
+G primeiro par + V2        4.00 / 4        0.00 / 19
+G 3 sorteados + V2         4.00 / 4        0.43 / 19
+Oráculo exato              4.00 / 4        0.00 / 19

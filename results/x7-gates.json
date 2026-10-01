@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-10-01T17:43:08.156Z",
+  "todas": {
+    "harmless": 3,
+    "harmful": 20,
+    "gates": {
+      "V0 formato": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 17
+      },
+      "V2 propriedades": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 2
+      },
+      "G primeiro par": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 5
+      },
+      "G 3 sorteados": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 5.194
+      },
+      "G primeiro par + V2": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 0
+      },
+      "G 3 sorteados + V2": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 0.432
+      },
+      "Oráculo exato": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 0
+      }
+    }
+  },
+  "nao-estritas": {
+    "harmless": 4,
+    "harmful": 19,
+    "gates": {
+      "V0 formato": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 16
+      },
+      "V2 propriedades": {
+        "rejectedHarmless": 4,
+        "acceptedHarmful": 2
+      },
+      "G primeiro par": {
+        "rejectedHarmless": 3,
+        "acceptedHarmful": 4
+      },
+      "G 3 sorteados": {
+        "rejectedHarmless": 3.492,
+        "acceptedHarmful": 4.686
+      },
+      "G primeiro par + V2": {
+        "rejectedHarmless": 4,
+        "acceptedHarmful": 0
+      },
+      "G 3 sorteados + V2": {
+        "rejectedHarmless": 4,
+        "acceptedHarmful": 0.432
+      },
+      "Oráculo exato": {
+        "rejectedHarmless": 4,
+        "acceptedHarmful": 0
+      }
+    }
+  }
+}

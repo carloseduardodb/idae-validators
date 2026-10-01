@@ -1,15 +1,15 @@
 # Quão Forte é o seu Validator?
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23074364.svg)](https://doi.org/10.5281/zenodo.23074364)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23074363.svg)](https://doi.org/10.5281/zenodo.23074363)
 
 Artigo: *Quão Forte é o seu Validator? Medindo Portões de Aceitação para
 Programas Sintetizados por LLM* —
-[doi.org/10.5281/zenodo.23074364](https://doi.org/10.5281/zenodo.23074364)
+[doi.org/10.5281/zenodo.23074363](https://doi.org/10.5281/zenodo.23074363)
 (PDF e fonte LaTeX em `article/`).
 
 English version: *How Strong Is Your Validator? Measuring Acceptance Gates for
 LLM-Synthesized Programs* —
-[doi.org/10.5281/zenodo.23074533](https://doi.org/10.5281/zenodo.23074533)
+[doi.org/10.5281/zenodo.23074532](https://doi.org/10.5281/zenodo.23074532)
 (PDF and LaTeX source in `article/arxiv/`).
 
 Autor: Carlos Eduardo Dias Batista — ORCID [0009-0005-5726-0289](https://orcid.org/0009-0005-5726-0289)
@@ -48,6 +48,11 @@ distintos**.
   da especificação.
 * **Escore de mutação** correlaciona moderadamente com a força contra falhas
   reais (Spearman ρ = 0,51, IC 95% [0,36; 0,66]): serve como triagem.
+* **Impacto na tarefa:** contra 14 tarefas de consumo congeladas antes da
+  análise, 20 dos 23 comportamentos defeituosos mudam o resultado de alguma
+  tarefa. O validator de formato pega justamente os 3 inofensivos e deixa
+  passar 17 que causam dano; V2 com o primeiro par verificado não deixa passar
+  nenhum.
 
 ## Experimentos
 
@@ -60,6 +65,7 @@ distintos**.
 | X4 | `x4` | RQ4 — custo por verificação e para criar | não |
 | X5 | `x5` | RQ3 — os mesmos validators revisados com autoverificação iterativa | 172 chamadas |
 | X6 | `x6` | RQ5 — pares entrada–saída verificados como portão de aceitação | não |
+| X7 | `x7` | RQ6 — impacto dos defeitos em 14 tarefas de consumo (`src/tasks.js`, congelado em `TASKS.sha256`) e dano aceito por portão | não |
 
 Todas as chamadas de LLM estão registradas em `data/new-logs/*.jsonl`
 (prompt e resposta). Os scripts que chamam o LLM reaproveitam as respostas do
@@ -78,6 +84,7 @@ npm run x2
 npm run x3-analysis
 npm run x4
 npm run x6
+npm run x7                # depois do x1 e do x6
 ```
 
 Os experimentos que chamam o LLM (`synth`, `x3`, `x5`) precisam de
